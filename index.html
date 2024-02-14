@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G8PTM5VMZW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G8PTM5VMZW");
+    </script>
+
     <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/f9aefcac71.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="./styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +23,11 @@
   </head>
   <body>
     <header>
-      <div class="header-content">
-        <span id="logo"><a href="/">GoldenTigerAcademy</a></span>
+      <div class="header-content-container-inner">
+        <span class="logo"><a href="/">Golden Tiger Academy</a></span>
         <nav>
-          <button class="mobile-menu-button" aria-controls="primary-navigation" aria-expanded="false">
-            <svg fill="var(--secondary-color)" class="hamburger" viewBox="0 0 100 100" width="25">
+          <button class="mobile-menu-button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle Menu">
+            <svg fill="var(--theme-color-3)" class="hamburger" viewBox="0 0 100 100" width="25">
               <rect class="line top" y="25" rx="5" x="0" width="100" height="10"></rect>
               <rect class="line middle" y="45" rx="5" x="0" width="100" height="10"></rect>
               <rect class="line bottom" y="65" rx="5" x="0" width="100" height="10"></rect>
@@ -23,16 +36,513 @@
 
           <div class="mobile-nav-wrapper">
             <ul id="primary-navigation">
-              <li><a href="#">Home</a></li>
-              <li><a href="#" aria-label="Learn more about Golden Tiger Academy">About us</a></li>
-              <li><a href="#" aria-label="Learn more about our classes">Our Classes</a></li>
-              <li><a href="#" aria-label="Check out our timetable">Timetable</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#about-us">About us</a></li>
+              <li><a href="#our-classes">Our Classes</a></li>
+              <li><a href="#timetable">Timetable</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
+    <!-- Hero Section -->
+    <div class="hero-section-outer">
+      <section class="hero-section-inner">
+        <div class="hero-text-container">
+          <h1 id="hero-header">Begin Your Martial Arts Journey at Golden Tiger Academy.</h1>
+          <p id="hero-subheader">Martial arts classes for all ages and levels, no experience required. Start your martial arts journey today with Brazilian Jiu-Jitsu, Karate, Muay Thai, Kung Fu, and more in Dunboyne, County Meath. Boost your fitness, learn self-defense, and unleash your potential. Get in touch to arrange a free trial class.</p>
+          <div class="cta-container">
+            <div class="cta-wrap">
+              <a href="./contact-us.html" class="cta cta-1-contact-us" target="_blank"> <i class="fa fa-envelope"></i> Contact Us</a>
+            </div>
+            <div class="cta-wrap">
+              <a href="tel:0872333481" class="cta cta-2-call-us" target="_blank"> <i class="fa fa-solid fa-phone fa-flip-horizontal"></i> Call Us Now</a>
+            </div>
+          </div>
+        </div>
+        <img class="hero-image-container" src="./images/hero-img.svg" alt="Black belt throwing a white belt with a sumi gaeshi" />
+      </section>
+      <div class="shape-divider-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-light"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us-section-container-outer" id="about-us">
+      <div class="about-us-section-container-inner">
+        <img src="./images/about-us-img-min.webp" alt="Ken Byrne Receiving His BJJ Black Belt" class="about-us-image" />
+        <div class="about-us-text">
+          <h2>About Us</h2>
+
+          <h3>
+            Ken Byrne
+            <svg class="black-belt" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="500" height="200" overflow="visible" viewBox="145.5 205.5 500 200">
+              <g stroke="#595857" stroke-width="4">
+                <path d="M348.15 259.254s-1.476 4.952.21 7.375 24.86 1.791 24.86 1.791l-11.27-10.22-13.8 1.054z" />
+                <path d="M165.938 236.398s119.181 32.087 233.778 32.087c114.599 0 214.68-51.188 218.501-53.479 3.818-2.292 12.986 38.963.765 48.131-12.225 9.168-80.983 48.896-216.208 48.896-135.227 0-233.016-21.393-239.893-29.032-6.876-7.64-6.876-38.199 3.057-46.603z" />
+                <path stroke-linejoin="round" d="M408.12 339.536s-22.156-6.111-28.268-21.393c-6.111-15.278 58.827-29.795 58.827-29.795l-6.112 31.324-24.447 19.864z" />
+                <path d="M351.585 315.852s30.561 21.393 35.144 19.101c4.584-2.292 58.827-36.671 58.827-36.671l-45.84-33.616-50.423 38.2 2.292 12.986z" />
+                <path d="M178.924 365.513s125.293-76.398 200.929-106.959c75.635-30.56 30.561 29.031 30.561 29.031s-78.69 38.199-110.779 57.299c-32.088 19.101-81.745 50.424-87.857 51.188-6.114.763-32.854-30.559-32.854-30.559z" />
+                <path d="M412.073 240.503s-5.29-1.851-14.146 8.46c-8.856 10.313 15.07 8.197 15.07 8.197l-.924-16.657z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M388.256 241.746s94.734 49.659 127.587 60.354c32.851 10.696 113.832 46.604 116.889 55.771s-27.503 30.559-27.503 30.559-23.685-21.391-54.243-34.379c-30.56-12.986-83.273-34.379-112.306-48.131-29.031-13.751-89.388-47.367-89.388-47.367l38.964-16.807h0z" />
+                <path stroke-linejoin="round" d="M411.94 240.982s-2.292 92.442-4.584 97.026c-2.293 4.584 42.783-12.988 43.546-18.336.765-5.349 6.877-50.423 2.293-55.007s-36.672-25.975-41.255-23.683z" />
+              </g>
+            </svg>
+            Head Instructor
+          </h3>
+
+          <p>Golden Tiger Academy, founded in 2008 by Ken Byrne, our Head Instructor who has over 35 years of martial arts experience and has been awarded a black belt in Brazilian Jiu-Jitsu, Kickboxing, Kenpo Karate, Kantanni Karate, WonHwaDo and Haidong Gumdo.</p>
+
+          <p>At Golden Tiger Academy We have classes that are designed to improve your self-defense and fitness levels. We have classes for all ages kids, teens and adults. Golden Tiger Academy provides a welcoming and supportive enviroment to train in to help you progress in your martial arts journey.</p>
+        </div>
+      </div>
+      <div class="shape-divider-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill-dark"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Our Classes Section -->
+    <section class="our-classes-section-container-outer" id="our-classes">
+      <h2>Our Classes</h2>
+      <div class="our-classes-section-container-inner">
+        <div class="card card1">
+          <div class="card-content">
+            <h3 class="card-header">Brazilian Jiu-Jitsu</h3>
+            <p class="card-subheader">BJJ focuses on ground grappling and submissions. Develop self-defense skills, fitness, and mental resilience through technical groundwork. Suitable for all skill levels.</p>
+            <a href="./class-bjj.html" class="card-btn">Learn More <span class="sr-only">about Brazilian Jiu-Jitsu</span></a>
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="card-content">
+            <h3 class="card-header">Karate</h3>
+            <p class="card-subheader">Karate blends punches, kicks, and blocks for self-defense. Discipline, respect, and physical conditioning are core aspects, fostering personal development and martial skill.</p>
+            <a href="./class-karate.html" class="card-btn">Learn More <span class="sr-only">about Karate</span></a>
+          </div>
+        </div>
+        <div class="card card3">
+          <div class="card-content">
+            <h3 class="card-header">Muay Thai</h3>
+            <p class="card-subheader">Muay Thai, the 'Art of Eight Limbs,' integrates punches, kicks, elbows, and knee strikes. Known for its power and effectiveness, it builds strength and striking precision.</p>
+            <a href="./class-muay-thai.html" class="card-btn">Learn More <span class="sr-only">about Muay Thai</span></a>
+          </div>
+        </div>
+        <div class="card card4">
+          <div class="card-content">
+            <h3 class="card-header">Kickboxing</h3>
+            <p class="card-subheader">Kickboxing combines punches and kicks for a dynamic striking art. Cardiovascular fitness, agility, and strong kicks characterize this sport, promoting overall physical conditioning.</p>
+            <a href="./class-kickboxing.html" class="card-btn">Learn More <span class="sr-only">about Kickboxing</span></a>
+          </div>
+        </div>
+
+        <div class="card card5">
+          <div class="card-content">
+            <h3 class="card-header">Wing Tsun Kung Fu</h3>
+            <p class="card-subheader">Wing Tsun Kung Fu is a martial art that emphasizes efficiency and directness in self-defense. Developed by Grandmaster Leung Ting, it focuses on practical techniques and scientific principles.</p>
+            <a href="./class-kung-fu.html" class="card-btn">Learn More <span class="sr-only">about Kung Fu</span></a>
+          </div>
+        </div>
+        <div class="card card6">
+          <div class="card-content">
+            <h3 class="card-header">Wonhwado</h3>
+            <p class="card-subheader">Wonhwado, a Korean martial art, integrates traditional techniques with modern self-defense. Emphasizes dynamic strikes, joint locks, and circular movements for a balanced martial practice.</p>
+            <a href="./class-wonhwado.html" class="card-btn">Learn More <span class="sr-only">about Wonhwado</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timetable Section Desktop -->
+    <section class="timetable-section-container-outer" id="timetable">
+      <h2>Timetable</h2>
+      <div class="filter-classes-container">
+        <button class="time-table-button" id="all">All Classes</button>
+        <button class="time-table-button" id="bjj">BJJ</button>
+        <button class="time-table-button" id="muay-thai">Muay Thai</button>
+        <button class="time-table-button" id="kickboxing">Kickboxing</button>
+
+        <button class="time-table-button" id="karate">Karate</button>
+        <button class="time-table-button" id="wing-tsun">Wing Tsun</button>
+        <button class="time-table-button" id="blood-and-bones">Blood & Bones</button>
+        <button class="time-table-button" id="open-mat">Open Mat</button>
+      </div>
+      <table class="timetable-section-container-inner">
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+
+        <tr>
+          <!-- Monday Row 1 -->
+          <td class="class bjj" data-cell="class">
+            BJJ NoGi
+            <div class="time" data-cell="time">6:30pm - 7:30pm</div>
+          </td>
+          <!-- Tuesday Row 1 -->
+          <td class="class bjj" data-cell="class">
+            BJJ (age 5-12)
+            <div class="time" data-cell="time">6pm - 6:45pm</div>
+          </td>
+          <!-- Wednesday Row 1 -->
+          <td class="class kickboxing" data-cell="class">
+            Kickboxing (age 5-12)
+            <div class="time" data-cell="time">5pm - 5:45pm</div>
+          </td>
+          <!-- Thursday Row 1 -->
+          <td class="class wonhwado" data-cell="class">
+            WonHwaDo (age 5-12)
+            <div class="time" data-cell="time">6pm - 6:45pm</div>
+          </td>
+          <!-- Friday Row 1 -->
+          <td class="class closed" data-cell="class">Closed</td>
+          <!-- Saturday Row 1 -->
+          <td class="class karate" data-cell="class">
+            Karate (age 5-12)
+            <div class="time" data-cell="time">9:30am - 10:15am</div>
+          </td>
+          <!-- Sunday Row 1 -->
+          <td class="class closed" data-cell="class">Closed</td>
+        </tr>
+        <tr>
+          <!-- Monday Row 2 -->
+          <td class="class muay-thai" data-cell="class">
+            Muay Thai
+            <div class="time" data-cell="time">7:30pm - 8:30pm</div>
+          </td>
+          <!-- Tuesday Row 2 -->
+          <td class="class bjj" data-cell="class">
+            BJJ Gi (age 13-17)
+            <div class="time" data-cell="time">7pm - 8pm</div>
+          </td>
+          <!-- Wednesday Row 2 -->
+          <td class="class kickboxing" data-cell="class">
+            Kickboxing (age 13-17)
+            <div class="time" data-cell="time">6pm - 7pm</div>
+          </td>
+          <!-- Thursday Row 2 -->
+          <td class="class bjj" data-cell="class">
+            BJJ Gi
+            <div class="time" data-cell="time">7pm - 8pm</div>
+          </td>
+          <!-- Friday Row 2 -->
+          <td class="class closed" data-cell="class">Closed</td>
+          <!-- Saturday Row 2 -->
+          <td class="class karate" data-cell="class">
+            Karate (age 13-17)
+            <div class="time" data-cell="time">10:30am - 11:30am</div>
+          </td>
+          <td class="class closed" data-cell="class">Closed</td>
+        </tr>
+        <tr>
+          <!-- Monday Row 3 -->
+
+          <td class="class blood-and-bones" data-cell="class">
+            Blood & Bones
+            <div class="time" data-cell="time">7:30pm - 8:30pm</div>
+          </td>
+          <!-- Tuesday Row 3 -->
+          <td class="class bjj" data-cell="class">
+            BJJ NoGi
+            <div class="time" data-cell="time">8pm - 9pm</div>
+          </td>
+          <!-- Wednesday Row 3 -->
+          <td class="class karate" data-cell="class">
+            Karate (age 13-17)
+            <div class="time" data-cell="time">7pm - 8pm</div>
+          </td>
+          <!-- Thursday Row 3 -->
+          <td class="class muay-thai" data-cell="class">
+            Muay Thai
+            <div class="time" data-cell="time">8pm - 9pm</div>
+          </td>
+          <!--Friday Row 3 -->
+          <td class="class closed" data-cell="class">Closed</td>
+          <!-- Saturday Row 3 -->
+          <td class="class open-mat" data-cell="class">
+            Open Mat (16+)
+            <div class="time" data-cell="time">12:30am - 1:30pm</div>
+          </td>
+          <!--Sunday Row 3 -->
+          <td class="class closed" data-cell="class">Closed</td>
+        </tr>
+        <tr>
+          <!-- Monday Row 4 -->
+          <td class="class wing-tsun" data-cell="class">
+            Wing Tsun Kung Fu
+            <div class="time" data-cell="time">8:30pm - 10:00pm</div>
+          </td>
+          <!-- Tuesday Row 4 -->
+          <td></td>
+          <!-- Wednesday Row 4 -->
+          <td class="class karate" data-cell="class">
+            Karate
+            <div class="time" data-cell="time">8pm - 9pm</div>
+          </td>
+          <!--Thursday Row 4 -->
+          <td data-cell="class"></td>
+          <!-- Friday Row 4 -->
+          <td class="class closed" data-cell="class">Closed</td>
+          <!-- Saturday Row 4 -->
+          <td data-cell="class"></td>
+          <!-- Sunday Row 4 -->
+          <td class="class closed" data-cell="class">Closed</td>
+        </tr>
+      </table>
+      <!-- Timetable Section Mobile -->
+      <table class="timetable-section-container-inner-mobile">
+        <!-- Monday -->
+        <tr>
+          <th>Monday</th>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            BJJ NoGi
+            <span class="time" data-cell="time">6:30pm - 7:30pm</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Muay Thai
+            <span class="time" data-cell="time">7:30pm - 8:30pm</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Blood & Bones
+            <span class="time" data-cell="time">7:30pm - 8:30pm</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Wing Tsun
+            <span class="time" data-cell="time">8:30pm - 10:00pm</span>
+          </td>
+        </tr>
+        <!-- Tuesday -->
+        <tr>
+          <th>Tuesday</th>
+        </tr>
+
+        <tr>
+          <td class="class" data-cell="class">
+            BJJ (age 5 -12)
+            <div class="time" data-cell="time">6pm - 6:45pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            BJJ Gi (age 13-17)
+            <div class="time" data-cell="time">7pm - 8pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            BJJ NoGi
+            <div class="time" data-cell="time">8pm - 9pm</div>
+          </td>
+        </tr>
+
+        <!-- Wednesday -->
+        <tr>
+          <th>Wednesday</th>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Kickboxing (age 5 -12)
+            <div class="time" data-cell="time">5pm - 5:45pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Kickboxing (age 13-17)
+            <div class="time" data-cell="time">6pm - 7pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Karate (age 13-17)
+            <div class="time" data-cell="time">7pm - 8pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Karate
+            <div class="time" data-cell="time">8pm - 9:00pm</div>
+          </td>
+        </tr>
+        <!-- Thursday -->
+        <tr>
+          <th>Thursday</th>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            WonHwaDo (age 5 -12)
+            <div class="time" data-cell="time">6pm - 6:45pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            BJJ Gi
+            <div class="time" data-cell="time">7pm - 8pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Muay Thai
+            <div class="time" data-cell="time">8pm - 9pm</div>
+          </td>
+        </tr>
+        <!-- Friday -->
+        <tr>
+          <th>Friday</th>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">Closed</td>
+        </tr>
+        <!-- Saturday -->
+        <tr>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Karate (age 5 -12)
+            <div class="time" data-cell="time">9:30am - 10:15am</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Karate
+            <div class="time" data-cell="time">11:30am - 12:30pm</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Karate (age 13-17)
+            <div class="time" data-cell="time">10:30am - 11:30am</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">
+            Open Mat
+            <div class="time" data-cell="time">12:30pm - 1:30pm</div>
+          </td>
+        </tr>
+        <!-- Sunday -->
+        <tr>
+          <th>Sunday</th>
+        </tr>
+        <tr>
+          <td class="class" data-cell="class">Closed</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section-container-outer">
+      <h2>FAQ's</h2>
+      <div class="faq-section-container-inner">
+        <ul class="accordion">
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer1">
+              <span class="question-title">Do I need any prior experience to join your martial arts classes?</span>
+              <img src="./images/icon-plus.svg" alt="" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer1" aria-hidden="true"><span> No prior experience is necessary to join our classes. Whether you're a complete beginner or have some experience in martial arts, our instructors will guide you through the fundamentals and help you progress at your own pace.</span></p>
+          </li>
+
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer2">
+              <span class="question-title">Do I need to be in shape before starting a martial art?</span>
+              <img src="./images/icon-plus.svg" alt="" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer2" aria-hidden="true"><span>No, martial arts is for people of all fitness levels. Our classes are designed to accommodate beginners and gradually build strength, flexibility, and endurance over time.</span></p>
+          </li>
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer2">
+              <span class="question-title">What age groups do you cater to in your martial arts classes?</span>
+              <img src="./images/icon-plus.svg" alt="" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer2" aria-hidden="true"><span>We offer classes for a wide range of age groups, including children (starting from age 5), teenagers, and adults. Our instructors tailor the curriculum to suit the specific needs and skill levels of each age group.</span></p>
+          </li>
+
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer3">
+              <span class="question-title">What should I wear and bring to my first martial arts class?</span>
+              <img src="./images/icon-plus.svg" alt="" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer3" aria-hidden="true"><span>For your first class, just wear comfortable gym clothes. Avoid anything with zippers or metal, and take off any jewellery if you can. Make sure your fingernails and toenails are trimmed too. And don't forget to bring a water bottle to stay hydrated!</span></p>
+          </li>
+
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer4">
+              <span class="question-title">Do you offer private lessons?</span>
+              <img src="./images/icon-plus.svg" alt="" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer4" aria-hidden="true"><span>Yes, we offer private lessons for individuals or small groups who prefer personalized instruction or have specific training objectives.</span></p>
+          </li>
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer4">
+              <span class="question-title">Are your instructors certified and experienced?</span>
+              <img src="./images/icon-plus.svg" alt="" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer4" aria-hidden="true"><span>All our instructors hold first aid training certification and are Garda-vetted. They bring years of valuable experience to ensure safe and effective instruction for students of all levels.</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner-container">
+        <div class="address">
+          <span class="logo"><a href="/">Golden Tiger Academy</a></span>
+          <div class="address-text">
+            Address: Unit 10, Dunboyne Business Park, <br />
+            Dunboyne, Co. Meath, A86 WR26
+          </div>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/goldentigeracademy/" target="_blank">
+              <i class="fa fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/kengoldentiger/" target="_blank">
+              <i class="fa fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+
+            <a href="./contact-us.html">
+              <i class="fa fa-envelope"></i>
+              <span class="sr-only">Email Us Now</span>
+            </a>
+            <a href="tel:0872333481">
+              <i class="fa fa-solid fa-phone fa-flip-horizontal"></i>
+              <span class="sr-only">Call Us Now</span>
+            </a>
+          </div>
+          <a href="https://www.linkedin.com/in/shanemcgeown/" class="designed-by">Designed by: shanemcgeown</a>
+        </div>
+      </div>
+    </footer>
+
     <script src="./app.js"></script>
   </body>
 </html>
