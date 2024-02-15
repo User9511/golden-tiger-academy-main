@@ -83,7 +83,7 @@ const isValidEmail = (email) => {
 
 const isValidMobileNumber = (mobileNumber) => {
   // Regular expression for validating mobile numbers (allowing digits only)
-  const re = /^[0-9]{9,}$/;
+  const re = /^\+?[0-9]{9,}$/;
   return re.test(mobileNumber);
 };
 
