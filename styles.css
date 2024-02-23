@@ -656,6 +656,32 @@ nav a:hover::after {
   background-color: red;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hidden:nth-child(2) {
+  transition-delay: 200ms;
+}
+.hidden:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0%);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 /*------------ Timetable Section Desktop ------------- */
 .timetable-section-container-outer {
   position: relative;
