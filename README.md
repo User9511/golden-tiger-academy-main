@@ -26,3 +26,8 @@ The Golden Tiger Academy website is a fully responsive online platform built to 
 - Icons: [Font Awesome](https://fontawesome.com/)
 - Images: All images used on the website are either owned by the Golden Tiger Academy or obtained from royalty-free sources.
 
+  
+## Author
+- [Shane Mc Geown LinkedIn](https://www.linkedin.com/in/shanemcgeown/)
+- [Shane Mc Geown Frontend Mentor](https://www.frontendmentor.io/profile/User9511)
+
