@@ -409,23 +409,34 @@ nav a:hover::after {
   background-color: var(--theme-color-3);
 }
 
+/* Card - BJJ */
 .card1 {
-  background-image: url("https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?q=80&w=3152&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-image: url("./images/our-class-bjj.png");
 }
+
+/* Card - Karate */
 .card2 {
-  background-image: url("https://images.unsplash.com/photo-1608583252022-09323426b8b6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGthcmF0ZXxlbnwwfHwwfHx8MA%3D%3D");
+  background-image: url("./images/our-class-karate.jpeg");
 }
+
+/* Card - Muay  Thai */
 .card3 {
-  background-image: url("https://images.unsplash.com/photo-1637974013743-82656f7c3f49?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG11YXklMjB0aGFpfGVufDB8fDB8fHww");
+  background-image: url("./images/our-class-muay-thai.jpeg");
 }
+
+/* Card - Kickboxing */
 .card4 {
-  background-image: url("https://images.unsplash.com/photo-1584863528123-65b675cc9009?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fGtpY2tib3hpbmd8ZW58MHx8MHx8fDA%3D");
+  background-image: url("./images/our-classes-kickboxing.png");
 }
+
+/* Card - Wing Tsun */
 .card5 {
-  background-image: url("https://images.unsplash.com/photo-1514050566906-8d077bae7046?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hcnRpYWwlMjBhcnRzfGVufDB8fDB8fHww");
+  background-image: url("./images/our-class-wing-tsun.png");
 }
+
+/* Card - WonHwaDo  */
 .card6 {
-  background-image: url("https://images.unsplash.com/photo-1602827115134-d366b3148ba5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hcnRpYWwlMjBhcnRzfGVufDB8fDB8fHww");
+  background-image: url("./images/our-classes-wonhwado.png");
 }
 
 /* ------------ Class Page Layout ----------- */
@@ -543,7 +554,7 @@ nav a:hover::after {
 
 /* ------------ Class Page - BJJ ----------- */
 .benefits-image.bjj {
-  background: url(./images/royce-gracie-ultimate-fighter.png);
+  background: url(./images/page-bjj-01.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right 75%;
@@ -551,32 +562,32 @@ nav a:hover::after {
 
 /* ------------ Class Page - Mauy-Thai ----------- */
 .benefits-image.muay-thai {
-  background: url("https://source.unsplash.com/random/?muaythai");
+  background: url("./images/page-muay-thai-02.png");
   background-size: cover;
   background-position: center;
 }
 /* ------------ Class Page - Karate ----------- */
 .benefits-image.karate {
-  background: url("https://source.unsplash.com/random/?karate");
+  background: url("./images/page-karate-02.png");
   background-size: cover;
   background-position: center;
 }
 
 /* ------------ Class Page - Kickboxing ----------- */
 .benefits-image.kickboxing {
-  background: url("https://source.unsplash.com/random/?kickboxing");
+  background: url("./images/page-kickboxing-02.png");
   background-size: cover;
   background-position: center;
 }
 /* ------------ Class Page - Wing Tsun Kung Fu ----------- */
 .benefits-image.kung-fu {
-  background: url("https://source.unsplash.com/random/?kungfu");
+  background: url("./images/page-wing-tsun-02.png");
   background-size: cover;
   background-position: center;
 }
 /* ------------ Class Page - WonHwaDo ----------- */
 .benefits-image.wonhwado {
-  background: url("https://source.unsplash.com/random/?korea");
+  background: url("./images/page-wonhwado-02.png");
   background-size: cover;
   background-position: center;
 }
