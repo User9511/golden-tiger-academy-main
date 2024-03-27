@@ -30,7 +30,7 @@
   --class-mauy-thai: #c94f22;
   --class-bjj: #15883f;
   --class-kickboxing: #3c7f8f;
-  --class-wonhwado: #a054cb;
+  --class-korean-kickboxing: #a054cb;
   --class-karate: #b16212;
   --class-blood-and-bones: rgb(138, 35, 35);
   --class-wingtsun: #4c6ee1;
@@ -411,7 +411,7 @@ nav a:hover::after {
 
 /* Card - BJJ */
 .card1 {
-  background-image: url("./images/our-class-bjj.png");
+  background-image: url("./images/our-classes-bjj.webp");
 }
 
 /* Card - Karate */
@@ -434,9 +434,9 @@ nav a:hover::after {
   background-image: url("./images/our-class-wing-tsun.png");
 }
 
-/* Card - WonHwaDo  */
+/* Card - Korean Kickboxing  */
 .card6 {
-  background-image: url("./images/our-classes-wonhwado.png");
+  background-image: url("./images/our-classes-korean-kickboxing.png");
 }
 
 /* ------------ Class Page Layout ----------- */
@@ -585,9 +585,9 @@ nav a:hover::after {
   background-size: cover;
   background-position: center;
 }
-/* ------------ Class Page - WonHwaDo ----------- */
-.benefits-image.wonhwado {
-  background: url("./images/page-wonhwado-02.png");
+/* ------------ Class Page - Korean Kickboxing ----------- */
+.benefits-image.korean-kickboxing {
+  background: url("./images/page-korean-kickboxing-02.png");
   background-size: cover;
   background-position: center;
 }
@@ -760,6 +760,7 @@ th {
 /* Timetable Cells */
 tr td {
   pointer-events: none;
+  font-size: 14.7px;
 }
 
 .grey-out {
@@ -786,8 +787,8 @@ tr td {
 .karate {
   background-color: var(--class-karate);
 }
-.wonhwado {
-  background-color: var(--class-wonhwado);
+.korean-kickboxing {
+  background-color: var(--class-korean-kickboxing);
 }
 
 .blood-and-bones {
