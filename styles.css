@@ -1647,10 +1647,6 @@ iframe {
   }
 
   /* 404 Error Page */
-  #error-404-body {
-    /* background-color: red; */
-  }
-
   .error-404-outer-container {
     display: grid;
     height: 100%;
