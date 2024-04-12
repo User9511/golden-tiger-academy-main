@@ -267,6 +267,22 @@ nav a:hover::after {
   color: var(--theme-color-2);
 }
 
+/* Added styles for hover effect */
+.cta:after {
+  content: "»";
+
+  opacity: 0;
+  top: 50%;
+  right: -1.5rem; /* Adjust as needed */
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.cta:hover:after {
+  opacity: 1;
+  right: 0.5rem; /* Adjust as needed */
+}
+
 /*------------------ About Us Section ------------------ */
 .about-us-section-container-outer {
   position: relative;
