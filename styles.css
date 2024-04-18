@@ -199,17 +199,20 @@ nav a:hover::after {
   width: calc(148% + 1.3px);
   height: 60px;
 }
-
-.shape-divider-bottom .shape-fill-light {
-  fill: var(--theme-color-3);
-}
-
-.shape-divider-bottom .shape-fill-medium {
+.shape-divider-bottom .theme-color-1 {
   fill: var(--theme-color-1);
 }
 
-.shape-divider-bottom .shape-fill-dark {
+.shape-divider-bottom .theme-color-2 {
   fill: var(--theme-color-2);
+}
+
+.shape-divider-bottom .theme-color-3 {
+  fill: var(--theme-color-3);
+}
+
+.shape-divider-bottom.classes {
+  position: absolute;
 }
 
 .hero-section-inner {
@@ -268,20 +271,6 @@ nav a:hover::after {
 }
 
 /* Added styles for hover effect */
-.cta:after {
-  content: "»";
-
-  opacity: 0;
-  top: 50%;
-  right: -1.5rem; /* Adjust as needed */
-  transform: translateY(-50%);
-  transition: 0.5s;
-}
-
-.cta:hover:after {
-  opacity: 1;
-  right: 0.5rem; /* Adjust as needed */
-}
 
 /*------------------ About Us Section ------------------ */
 .about-us-section-container-outer {
@@ -608,6 +597,140 @@ nav a:hover::after {
   background-position: center;
 }
 
+/* ------------ Testimonials ----------- */
+.testimonials-section-container-outer {
+  background-color: var(--theme-color-3);
+}
+
+.testimonials-section-container-outer h2 {
+  position: relative;
+  top: 4.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  color: var(--theme-color-4);
+}
+
+.testimonials-section-container-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: center;
+  gap: 2rem;
+  max-width: 75rem;
+  padding: 9rem 1rem;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  display: grid;
+  justify-items: center;
+  align-content: space-between;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  color: var(--theme-color-2);
+  background: var(--theme-color-3);
+  border-radius: 0.5rem;
+}
+
+.testimonial-review {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.icon-stars {
+  max-width: 6rem;
+}
+
+.icon-google {
+  max-width: 1.25rem;
+}
+
+/*------------------ FAQ Section ------------------ */
+.faq-section-container-outer {
+  background-color: var(--theme-color-1);
+  padding: 6rem 0;
+}
+.faq-section-container-outer h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+.faq-section-container-inner {
+  max-width: 50rem;
+  padding: 2rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+li img {
+  width: fit-content;
+}
+
+.question-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  border: 0;
+  background-color: transparent;
+  color: var(--Dark-purple);
+  font-weight: 700;
+  padding: 1rem 0;
+  z-index: 100;
+}
+
+.hide {
+  display: none;
+}
+
+button[aria-expanded="true"] + .faq-answer {
+  transition: all 0.3s linear;
+  margin-bottom: 1rem;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid var(--accent-color-3);
+  margin-bottom: 1rem;
+
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 25% cover 25%;
+}
+
+.question-title {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.3s linear;
+  color: var(--theme-color-2);
+}
+
+.faq-answer[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer > span {
+  overflow: hidden;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-color-1);
+}
+
 /* Ready To Join */
 .ready-to-join-container-outer {
   background-color: var(--theme-color-4);
@@ -821,90 +944,6 @@ tr td {
 /* Timetable Mobile */
 .timetable-section-container-inner-mobile {
   display: none;
-}
-
-/*------------------ FAQ Section ------------------ */
-.faq-section-container-outer {
-  background-color: var(--theme-color-1);
-  padding: 6rem 0;
-}
-.faq-section-container-outer h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
-  text-align: center;
-
-  animation: fade linear both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 50%;
-}
-
-.faq-section-container-inner {
-  max-width: 50rem;
-  background-color: var(--White);
-  padding: 2rem;
-  margin: 0 auto;
-  border-radius: 1rem;
-}
-
-li img {
-  width: fit-content;
-}
-
-.question-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  border: 0;
-  background-color: transparent;
-  color: var(--Dark-purple);
-  font-weight: 700;
-  padding: 1rem 0;
-  z-index: 100;
-}
-
-.hide {
-  display: none;
-}
-
-button[aria-expanded="true"] + .faq-answer {
-  transition: all 0.3s linear;
-  margin-bottom: 1rem;
-}
-
-.faq {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 2px solid var(--accent-color-3);
-  margin-bottom: 1rem;
-
-  animation: fade linear both;
-  animation-timeline: view();
-  animation-range: entry 25% cover 25%;
-}
-
-.question-title {
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.faq-answer {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: all 0.3s linear;
-  color: var(--theme-color-2);
-}
-
-.faq-answer[aria-hidden="false"] {
-  grid-template-rows: 1fr;
-}
-
-.faq-answer > span {
-  overflow: hidden;
-}
-
-:focus-visible {
-  outline: 2px solid var(--accent-color-1);
 }
 
 /*------------- Footer -----------------*/
@@ -1561,6 +1600,12 @@ iframe {
   /* FAQs Section */
   .faq {
     margin-bottom: 2rem;
+  }
+
+  /* ------------ Testimonials ----------- */
+  .testimonials-section-container-inner {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   /* ------------Footer ---------- */
