@@ -643,6 +643,42 @@ nav a:hover::after {
   background-size: cover;
   background-position: center;
 }
+
+/* Ribbon - Coming Soon */
+
+aside {
+  line-height: 24px;
+  position: relative;
+  top: 0rem;
+  left: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+aside.arrow {
+  background-color: #ff3e3e;
+}
+
+aside.arrow:before,
+aside.arrow:after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 12px 0 12px 17px;
+}
+
+aside.arrow:before {
+  border-color: #ff3e3e transparent;
+  left: -17px;
+}
+
+aside.arrow:after {
+  border-color: transparent #ff3e3e;
+  right: -17px;
+}
+
 /* ------------ Class Page - Karate ----------- */
 .benefits-image.karate {
   background: url("./images/page-karate-02.png");
@@ -1777,6 +1813,13 @@ iframe {
     grid-template-columns: 1fr;
     gap: 0rem;
     padding: 8rem 1rem;
+  }
+
+  /* Muay Thai Page - Kids Class Coming Soon */
+  /* Ribbon - Coming Soon */
+
+  aside {
+    margin-bottom: 0.25rem;
   }
 
   /* 404 Error Page */
