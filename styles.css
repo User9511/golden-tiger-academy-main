@@ -499,6 +499,30 @@ nav a:hover::after {
 /* Card - Muay  Thai */
 .card3 {
   background-image: url("./images/our-class-muay-thai.jpeg");
+  position: relative;
+}
+
+/* Card - Muay Thai - Kids Class Coming Soon Ribbon */
+.ribbon {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.ribbon {
+  --f: 0.5em; /* control the folded part*/
+  --r: 0.8em; /* control the ribbon shape */
+  z-index: 1000;
+  position: absolute;
+  top: 1.25rem;
+  right: calc(-1 * var(--f));
+  padding-inline: 0.25em;
+  line-height: 1.8;
+  background: #ff3e3e;
+  border-bottom: var(--f) solid #0005;
+  border-left: var(--r) solid #0000;
+  clip-path: polygon(var(--r) 0, 100% 0, 100% calc(100% - var(--f)), calc(100% - var(--f)) 100%, calc(100% - var(--f)) calc(100% - var(--f)), var(--r) calc(100% - var(--f)), 0 calc(50% - var(--f) / 2));
+  right: 0.25rem;
 }
 
 /* Card - Kickboxing */
