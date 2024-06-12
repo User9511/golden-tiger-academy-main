@@ -23,7 +23,9 @@ const messageInput = document.getElementById("message");
 form.addEventListener("submit", (e) => {
   e.preventDefault(); // Prevent default form submission
   if (validateInputs()) {
+    // Store the user's name and message in sessionStorage
     sessionStorage.setItem("userName", nameInput.value.trim());
+    sessionStorage.setItem("userMessage", messageInput.value.trim());
     form.submit(); // Submit the form if validation passes
   }
 });
