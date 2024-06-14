@@ -73,7 +73,8 @@ button {
   cursor: pointer;
 }
 
-img {
+img,
+video {
   width: 100%;
 }
 
@@ -1555,6 +1556,111 @@ iframe {
   }
 }
 
+/* Landing Page Design */
+
+#class-sign-up-page .header-content-container-inner {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#class-sign-up-page .five-star-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  background-color: var(--theme-color-3);
+  color: var(--theme-color-2);
+  text-align: center;
+  font-weight: bold;
+}
+
+#class-sign-up-page .five-star-reviews p {
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+#class-sign-up-page .hero-section-outer {
+  background-color: var(--theme-color-2);
+}
+
+#class-sign-up-page #hero-header {
+  font-size: 2.8rem;
+}
+
+#class-sign-up-page .cta-container {
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+#class-sign-up-page .cta-container .draw-border {
+  width: fit-content;
+}
+
+#class-sign-up-page #cta-bottom {
+  position: relative;
+  bottom: 3rem;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+#class-sign-up-page .cta-1-contact-us {
+  background-color: var(--cta-color-2);
+  color: var(--theme-color-2);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#class-sign-up-page .fa-envelope::before {
+  color: var(--theme-color-2);
+}
+#class-sign-up-page .class-section-container-inner {
+  grid-template-columns: 1fr;
+  min-height: 10rem;
+}
+
+#class-sign-up-page .benefits-text-container h2 {
+  top: -10rem;
+}
+
+#class-sign-up-page .class-section-container-outer {
+  background-color: #e7f0e1;
+  color: var(--theme-color-3);
+}
+
+#class-sign-up-page .shape-divider-bottom .theme-color-3 {
+  fill: #e7f0e1;
+}
+#class-sign-up-page .shape-divider-bottom .theme-color-1 {
+  fill: var(--theme-color-3);
+}
+
+#class-sign-up-page .benefits-text-container h2::after {
+  background-color: var(--theme-color-2);
+}
+
+#class-sign-up-page video {
+  border-radius: 0.5rem;
+}
+
+.fa-star {
+  color: var(--theme-color-2);
+  font-size: 0.8rem;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#landing-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* Tablet Layout */
 @media screen and (min-width: 48rem) and (max-width: 53rem) {
   nav ul {
@@ -1891,6 +1997,24 @@ iframe {
     width: 60%;
     position: absolute;
     bottom: 0;
+  }
+
+  /* Landing Page Design */
+  .fa-star {
+    font-size: 0.8rem;
+  }
+
+  #class-sign-up-page #hero-header {
+    font-size: 2rem;
+  }
+
+  #class-sign-up-page .cta-container {
+    width: auto;
+  }
+
+  #class-sign-up-page .benefits-text-container h2 {
+    font-size: 1.8rem;
+    top: -7.5rem;
   }
 
   /* Lightbulb */
