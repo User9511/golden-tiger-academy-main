@@ -1789,7 +1789,7 @@ iframe {
   }
 
   .form {
-    order: 2;
+    order: 1;
     background-color: var(--theme-color-1);
   }
 
