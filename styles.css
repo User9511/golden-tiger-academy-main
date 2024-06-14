@@ -1614,6 +1614,7 @@ iframe {
 #class-sign-up-page .fa-envelope::before {
   color: var(--theme-color-2);
 }
+
 #class-sign-up-page .class-section-container-inner {
   grid-template-columns: 1fr;
   min-height: 10rem;
@@ -2008,6 +2009,10 @@ iframe {
     font-size: 2rem;
   }
 
+  #class-sign-up-page video {
+    border-radius: 0;
+  }
+
   #class-sign-up-page .cta-container {
     width: auto;
   }
@@ -2015,6 +2020,10 @@ iframe {
   #class-sign-up-page .benefits-text-container h2 {
     font-size: 1.8rem;
     top: -7.5rem;
+  }
+
+  #class-sign-up-page .hero-section-inner {
+    padding: 5.6rem 0 6rem 0;
   }
 
   /* Lightbulb */
