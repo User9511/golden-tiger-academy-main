@@ -1558,6 +1558,7 @@ iframe {
 
 /* Landing Page Design */
 
+html,
 body.class-sign-up-page {
   height: auto !important;
 }
