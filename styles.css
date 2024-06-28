@@ -488,17 +488,18 @@ nav a:hover::after {
 }
 
 /* Card - BJJ */
-.card1 {
+.card-bjj {
   background-image: url("./images/our-classes-bjj.webp");
 }
 
 /* Card - Karate */
-.card2 {
+.card-kenpo-karate {
   background-image: url("./images/our-class-karate.jpeg");
+  position: relative;
 }
 
 /* Card - Muay  Thai */
-.card3 {
+.card-muay-thai {
   background-image: url("./images/our-class-muay-thai.jpeg");
   position: relative;
 }
@@ -527,17 +528,17 @@ nav a:hover::after {
 }
 
 /* Card - Kickboxing */
-.card4 {
+.card-kickboxing {
   background-image: url("./images/our-classes-kickboxing.png");
 }
 
 /* Card - Wing Tsun */
-.card5 {
+.card-wing-tsun {
   background-image: url("./images/our-class-wing-tsun.png");
 }
 
 /* Card - Korean Kickboxing  */
-.card6 {
+.card-korean-kickboxing {
   background-image: url("./images/our-classes-korean-kickboxing.png");
 }
 
@@ -676,7 +677,7 @@ aside {
   position: relative;
   top: 0rem;
   left: 1rem;
-  width: 30%;
+  width: 50%;
   text-align: center;
   font-size: 0.9rem;
 }
