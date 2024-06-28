@@ -1575,6 +1575,7 @@ body.class-sign-up-page {
 }
 #class-sign-up-page .hero-text-container {
   max-width: 55ch;
+  padding: 0 1rem;
 }
 
 #class-sign-up-page .five-star-reviews {
@@ -2052,7 +2053,7 @@ body#what-is-bjj main {
   }
 
   #class-sign-up-page .hero-section-inner {
-    padding: 5.6rem 1rem 6rem 1rem;
+    padding: 5.6rem 0rem 6rem 0rem;
   }
 
   /* Lightbulb */
