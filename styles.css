@@ -38,7 +38,6 @@
   --table-cell-colour: #f0f0f0;
 }
 
-html,
 body {
   display: flex;
   flex-direction: column;
@@ -1558,10 +1557,17 @@ iframe {
 
 /* Landing Page Design */
 
+body.class-sign-up-page {
+  height: auto !important;
+}
+
 #class-sign-up-page .header-content-container-inner {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+#class-sign-up-page .hero-text-container {
+  max-width: 55ch;
 }
 
 #class-sign-up-page .five-star-reviews {
@@ -1600,7 +1606,6 @@ iframe {
 #class-sign-up-page #cta-bottom {
   position: relative;
   bottom: 3rem;
-  margin: 0 auto;
   justify-items: center;
 }
 
@@ -1660,6 +1665,23 @@ iframe {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* SEO Page 01 - What is Brazilian Jiu-Jitsu BJJ */
+
+body#what-is-bjj .logo {
+  margin: 0 auto;
+}
+body#what-is-bjj header {
+  position: relative;
+}
+
+body#what-is-bjj main {
+  height: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--theme-color-2);
 }
 
 /* Tablet Layout */
@@ -2023,7 +2045,7 @@ iframe {
   }
 
   #class-sign-up-page .hero-section-inner {
-    padding: 5.6rem 0 6rem 0;
+    padding: 5.6rem 1rem 6rem 1rem;
   }
 
   /* Lightbulb */

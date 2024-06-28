@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-K6FXLSWW");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Hotjar Tracking Code for https://goldentigeracademy.com/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3867105, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 850325,
+            version = 2.0,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style = "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(localStorage.getItem("_vwo_" + account_id + "_config"));
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined" ? use_existing_jquery : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined" ? library_tolerance : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function () {
+              if (!f) {
+                f = true;
+                var e = d.getElementById("_vis_opt_path_hides");
+                if (e) e.parentNode.removeChild(e);
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            load: function (e) {
+              var t = this.getSettings(),
+                n = d.createElement("script"),
+                i = this;
+              if (t) {
+                n.textContent = t;
+                d.getElementsByTagName("head")[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  i.load(e);
+                }
+              } else {
+                n.fetchPriority = "high";
+                n.src = e;
+                n.type = "text/javascript";
+                n.onerror = function () {
+                  _vwo_code.finish();
+                };
+                d.getElementsByTagName("head")[0].appendChild(n);
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t = d.currentScript,
+                n = d.createElement("style"),
+                i = this.hide_element(),
+                r = t && !t.async && i ? i + this.hide_element_style() : "",
+                c = d.getElementsByTagName("head")[0];
+              n.setAttribute("id", "_vis_opt_path_hides");
+              v && n.setAttribute("nonce", v.nonce);
+              n.setAttribute("type", "text/css");
+              if (n.styleSheet) n.styleSheet.cssText = r;
+              else n.appendChild(d.createTextNode(r));
+              c.appendChild(n);
+              this.load("https://dev.visualwebsiteoptimizer.com/j.php?a=" + account_id + "&u=" + encodeURIComponent(d.URL) + "&vn=" + version);
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/f9aefcac71.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://goldentigeracademy.com/class-karate" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffa126" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="What is Brazilian Jiu Jitsu (BJJ)? - a martial art emphasizing ground fighting, leverage, and technique. Learn about BJJ's principles, techniques like submissions and positions, and its benefits for self-defense and fitness." />
+    <title>What is Brazilian Jiu-Jitsu ?</title>
+  </head>
+  <body id="what-is-bjj">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6FXLSWW" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div class="header-content-container-inner">
+        <span class="logo"> <a href="/">Golden Tiger Academy</a></span>
+      </div>
+    </header>
+
+    <main>
+      <h1>What is Brazilian Jiu-Jitsu (BJJ)?</h1>
+
+      <article>
+        <section>
+          <h2>Introduction to Brazilian Jiu Jitsu</h2>
+          <p>Brazilian Jiu Jitsu (BJJ) is a martial art that focuses on ground fighting and grappling techniques. Developed from traditional Japanese Jiu Jitsu, BJJ emphasizes leverage and technique to overcome larger opponents.</p>
+        </section>
+
+        <section>
+          <h2>Core Principles of BJJ</h2>
+          <p>Key principles of Brazilian Jiu Jitsu include:</p>
+          <ul>
+            <li><strong>Leverage:</strong> Using leverage to control and submit opponents.</li>
+            <li><strong>Technique:</strong> Emphasizing proper technique over strength.</li>
+            <li><strong>Positional Control:</strong> Achieving dominant positions like mount, guard, and side control.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Key Techniques in BJJ</h2>
+          <p>BJJ techniques focus on submissions (joint locks and chokeholds), escapes, and positional transitions. Practitioners learn to apply these techniques both with and without the traditional gi (uniform).</p>
+        </section>
+
+        <section>
+          <h2>Benefits of Practicing BJJ</h2>
+          <p>Practicing Brazilian Jiu Jitsu offers various benefits:</p>
+          <ul>
+            <li>Improves physical fitness, including strength, flexibility, and cardiovascular endurance.</li>
+            <li>Enhances mental toughness, focus, and problem-solving skills.</li>
+            <li>Promotes camaraderie and a sense of community among practitioners.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Conclusion</h2>
+          <p>Whether you're interested in self-defense, physical fitness, or personal growth, Brazilian Jiu Jitsu provides a comprehensive martial arts experience. Its principles of leverage and technique make it suitable for people of all ages and fitness levels.</p>
+          <p>Start your journey in Brazilian Jiu Jitsu today and experience the transformative benefits of this dynamic martial art.</p>
+        </section>
+      </article>
+    </main>
+
+    <!-- Section - Ready To Join -->
+    <section class="ready-to-join-container-outer">
+      <div class="ready-to-join-container-inner">
+        <h3>Ready to Begin?</h3>
+        <p>Ready to jump in and join us? Get started by contacting us to set up your free trial class</p>
+        <div class="cta-container">
+          <div class="cta-wrap draw-border">
+            <a href="./contact-us" class="cta cta-1-contact-us"> <i class="fa fa-envelope"></i> Contact Us</a>
+          </div>
+          <div class="cta-wrap draw-border draw-border-white">
+            <a href="tel:0872333481" class="cta cta-2-call-us"> <i class="fa fa-solid fa-phone fa-flip-horizontal"></i> Call Us Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner-container">
+        <div class="address">
+          <span class="logo"><a href="./">Golden Tiger Academy</a></span>
+          <div class="address-text">
+            Address: Unit 10, Dunboyne Business Park, <br />
+            Dunboyne, Co. Meath, A86 WR26
+          </div>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/goldentigeracademy/" target="_blank">
+              <i class="fa fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/kengoldentiger/" target="_blank">
+              <i class="fa fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+
+            <a href="./contact-us">
+              <i class="fa fa-envelope"></i>
+              <span class="sr-only">Email Us Now</span>
+            </a>
+            <a href="tel:0872333481">
+              <i class="fa fa-solid fa-phone fa-flip-horizontal"></i>
+              <span class="sr-only">Call Us Now</span>
+            </a>
+          </div>
+          <a href="https://www.linkedin.com/in/shanemcgeown/" class="designed-by">Designed by: shanemcgeown</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./animate.js"></script>
+  </body>
+</html>
