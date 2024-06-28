@@ -38,6 +38,7 @@
   --table-cell-colour: #f0f0f0;
 }
 
+html,
 body {
   display: flex;
   flex-direction: column;
