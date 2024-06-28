@@ -1153,6 +1153,10 @@ footer {
 }
 
 /* ------------- Contact Us Page --------------- */
+
+#contact-us-body {
+  height: 100vh;
+}
 #contact-us-body header {
   position: sticky;
 }
