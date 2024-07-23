@@ -32,8 +32,6 @@
   --class-kickboxing: #3c7f8f;
   --class-korean-kickboxing: #a054cb;
   --class-karate: #b16212;
-  --class-blood-and-bones: rgb(138, 35, 35);
-  --class-wingtsun: #4c6ee1;
   --class-open-mat: #5b5c8f;
   --table-cell-colour: #f0f0f0;
 }
@@ -532,11 +530,6 @@ nav a:hover::after {
   background-image: url("./images/our-classes-kickboxing.webp");
 }
 
-/* Card - Wing Tsun */
-.card-wing-tsun {
-  background-image: url("./images/our-class-wing-tsun.webp");
-}
-
 /* Card - Korean Kickboxing  */
 .card-korean-kickboxing {
   background-image: url("./images/our-classes-korean-kickboxing.webp");
@@ -719,12 +712,7 @@ aside.arrow:after {
   background-size: cover;
   background-position: center;
 }
-/* ------------ Class Page - Wing Tsun Kung Fu ----------- */
-.benefits-image.kung-fu {
-  background: url("./images/page-wing-tsun-02.webp");
-  background-size: cover;
-  background-position: center;
-}
+
 /* ------------ Class Page - Korean Kickboxing ----------- */
 .benefits-image.korean-kickboxing {
   background: url("./images/page-korean-kickboxing-02.webp");
@@ -1047,10 +1035,6 @@ tr td {
   background-color: var(--class-mauy-thai);
 }
 
-.wing-tsun {
-  background-color: var(--class-wingtsun);
-}
-
 .bjj {
   background-color: var(--class-bjj);
 }
@@ -1063,10 +1047,6 @@ tr td {
 }
 .korean-kickboxing {
   background-color: var(--class-korean-kickboxing);
-}
-
-.blood-and-bones {
-  background-color: var(--class-blood-and-bones);
 }
 
 .open-mat {
