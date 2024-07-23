@@ -1005,7 +1005,7 @@ th {
 /* Timetable Filter Classes */
 .filter-classes-container {
   display: grid;
-  grid-template-columns: repeat(8, minmax(50px, 1fr));
+  grid-template-columns: repeat(6, minmax(50px, 1fr));
   justify-content: center;
   gap: 1rem;
   position: relative;
