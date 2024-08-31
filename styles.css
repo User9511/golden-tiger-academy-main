@@ -1679,6 +1679,51 @@ body#what-is-bjj main {
   margin: 3rem 0 0 0;
 }
 
+/* Blog Homepage */
+#blog h1 {
+  position: relative;
+  color: var(--theme-color-2);
+  font-size: 3rem;
+  font-weight: lighter;
+  top: 6rem;
+  text-align: center;
+}
+
+.blog-container-outer {
+}
+
+.blog-container-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 75rem;
+  margin: 5rem auto 0 auto;
+  padding: 1rem;
+}
+
+.blog-container-inner a {
+  color: var(--theme-color-2);
+  display: block;
+}
+
+.blog-container-inner a:hover {
+  scale: 1.05;
+  transition: scale 0.3s ease-in-out;
+}
+
+.blog-card img {
+}
+
+.blog-card-eyebrow {
+}
+
+.blog-card-title {
+  font-weight: 500;
+}
+
+.blog-card-text {
+}
+
 /* Tablet Layout */
 @media screen and (min-width: 48rem) and (max-width: 53rem) {
   nav ul {
@@ -2041,6 +2086,11 @@ body#what-is-bjj main {
 
   #class-sign-up-page .hero-section-inner {
     padding: 5.6rem 0rem 6rem 0rem;
+  }
+
+  /* Blog Homepage */
+  .blog-container-inner {
+    grid-template-columns: 1fr;
   }
 
   /* Lightbulb */
