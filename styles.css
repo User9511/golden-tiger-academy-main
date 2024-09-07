@@ -1657,14 +1657,14 @@ body.class-sign-up-page {
 
 /* SEO Page 01 - What is Brazilian Jiu-Jitsu BJJ */
 
-body#what-is-bjj .logo {
+body#blog-page .logo {
   margin: 0 auto;
 }
-body#what-is-bjj header {
+body#blog-page header {
   position: relative;
 }
 
-body#what-is-bjj main {
+body#blog-page main {
   display: grid;
   gap: 3rem;
   height: 100%;
