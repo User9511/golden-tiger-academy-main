@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222579198944867" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-K6FXLSWW");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 850325,
+            version = 2.1,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style = "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(localStorage.getItem("_vwo_" + account_id + "_config"));
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined" ? use_existing_jquery : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined" ? library_tolerance : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              if (performance.getEntriesByName("first-contentful-paint")[0]) {
+                return "";
+              }
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function (e) {
+              if (!f) {
+                f = true;
+                var t = d.getElementById("_vis_opt_path_hides");
+                if (t) t.parentNode.removeChild(t);
+                if (e) new Image().src = "https://dev.visualwebsiteoptimizer.com/ee.gif?a=" + account_id + e;
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            addScript: function (e) {
+              var t = d.createElement("script");
+              t.type = "text/javascript";
+              if (e.src) {
+                t.src = e.src;
+              } else {
+                t.text = e.text;
+              }
+              d.getElementsByTagName("head")[0].appendChild(t);
+            },
+            load: function (e, t) {
+              var i = this.getSettings(),
+                n = d.createElement("script"),
+                r = this;
+              t = t || {};
+              if (i) {
+                n.textContent = i;
+                d.getElementsByTagName("head")[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  r.load(e);
+                }
+              } else {
+                var o = new XMLHttpRequest();
+                o.open("GET", e, true);
+                o.withCredentials = !t.dSC;
+                o.responseType = t.responseType || "text";
+                o.onload = function () {
+                  if (t.onloadCb) {
+                    return t.onloadCb(o, e);
+                  }
+                  if (o.status === 200) {
+                    _vwo_code.addScript({ text: o.responseText });
+                  } else {
+                    _vwo_code.finish("&e=loading_failure:" + e);
+                  }
+                };
+                o.onerror = function () {
+                  if (t.onerrorCb) {
+                    return t.onerrorCb(e);
+                  }
+                  _vwo_code.finish("&e=loading_failure:" + e);
+                };
+                o.send();
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t;
+              if (this.hide_element() !== "body") {
+                t = d.createElement("style");
+                var i = this.hide_element(),
+                  n = i ? i + this.hide_element_style() : "",
+                  r = d.getElementsByTagName("head")[0];
+                t.setAttribute("id", "_vis_opt_path_hides");
+                v && t.setAttribute("nonce", v.nonce);
+                t.setAttribute("type", "text/css");
+                if (t.styleSheet) t.styleSheet.cssText = n;
+                else t.appendChild(d.createTextNode(n));
+                r.appendChild(t);
+              } else {
+                t = d.getElementsByTagName("head")[0];
+                var n = d.createElement("div");
+                n.style.cssText = "z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;";
+                n.setAttribute("id", "_vis_opt_path_hides");
+                n.classList.add("_vis_hide_layer");
+                t.parentNode.insertBefore(n, t.nextSibling);
+              }
+              var o = "https://dev.visualwebsiteoptimizer.com/j.php?a=" + account_id + "&u=" + encodeURIComponent(d.URL) + "&vn=" + version;
+              if (w.location.search.indexOf("_vwo_xhr") !== -1) {
+                this.addScript({ src: o });
+              } else {
+                this.load(o + "&x=true");
+              }
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/f9aefcac71.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://goldentigeracademy.com/class-karate" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffa126" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./styles.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Looking for MMA training near Dublin? Golden Tiger Academy in Meath offers expert training in Muay Thai, Brazilian Jiu-Jitsu, and more. Start your MMA journey today!" />
+    <title>MMA Dublin | Train Like a Fighter at Golden Tiger Academy</title>
+  </head>
+  <body id="blog-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6FXLSWW" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div class="header-content-container-inner">
+        <span class="logo"> <a href="/">Goldetigeracademy</a></span>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>MMA Near Dublin: Train Like a Fighter in Dunboyne</h1>
+
+        <p>Mixed Martial Arts (MMA) is one of the fastest-growing combat sports in Ireland. Fighters are known for their ability to blend multiple martial arts into a dynamic and explosive style. If you're looking to train like an MMA fighter, it's important to understand the combination of striking, grappling, and conditioning that defines MMA success. Training in MMA Ireland provides you with the opportunity to develop these essential skills in a supportive environment.</p>
+
+        <img src="./images/gallery-6.webp" class="blog-image" alt="MMA training session" />
+      </section>
+
+      <section>
+        <h2>Why Train Like an MMA Fighter?</h2>
+        <p>Training like an MMA fighter doesn’t just prepare you for competition; it transforms your overall fitness, conditioning, and self-defense skills. Whether you're an aspiring fighter or simply looking to improve your physical health, the benefits are extensive. MMA training pushes your body and mind to their limits, improving strength, endurance, flexibility, and mental toughness.</p>
+      </section>
+
+      <section>
+        <h2>Master Striking Techniques with Muay Thai and Kickboxing</h2>
+        <p>In MMA, striking is just as important as grappling. Two of the most popular martial arts for striking are Muay Thai and Kickboxing. Both emphasize powerful, explosive techniques that can overwhelm opponents.</p>
+        <p>Muay Thai, also known as the “Art of Eight Limbs,” utilizes punches, kicks, knees, and elbows. Its clinch techniques are highly effective in close-quarters combat, making it a staple in MMA. Kickboxing emphasizes rapid combinations and footwork, teaching fighters how to stay agile while landing effective strikes.</p>
+        <p>At Golden Tiger Academy, we offer both Muay Thai for MMA and Kickboxing for MMA classes, where you can develop precision, power, and speed – all of which are essential for MMA.</p>
+
+        <img src="./images/page-muay-thai-02.webp" class="blog-image" alt="Muay Thai and Kickboxing training" />
+      </section>
+
+      <section>
+        <h2>Brazilian Jiu-Jitsu: The Foundation of MMA Grappling</h2>
+        <p>No MMA training is complete without mastering the ground game, and Brazilian Jiu-Jitsu (BJJ) is the gold standard when it comes to grappling. BJJ focuses on submissions, joint locks, and positional control, giving you the ability to dominate opponents on the ground.</p>
+        <p>One of the reasons BJJ for MMA is so important is that fights often go to the ground. Knowing how to maintain top control, execute submissions, or escape from dangerous positions is crucial. At Golden Tiger Academy, our BJJ classes will teach you to handle yourself in both defensive and offensive positions, ensuring you're ready for any scenario in MMA combat.</p>
+
+        <img src="./images/page-bjj-02.webp" class="blog-image" alt="Brazilian Jiu-Jitsu practice" />
+      </section>
+
+      <section>
+        <h2>Kenpo Karate: An Edge in Speed and Defense</h2>
+        <p>While Kenpo Karate might not be the first martial art you think of when it comes to MMA, its rapid strikes and defensive techniques offer an edge, particularly in speed and precision. Many MMA fighters incorporate traditional martial arts like Karate into their striking arsenal to keep opponents guessing.</p>
+        <p>Kenpo’s emphasis on fluid movement and quick counters can help fighters stay one step ahead in the cage. Our Kenpo Karate classes at Golden Tiger Academy focus on these principles, ensuring you develop both offensive and defensive capabilities that are useful in MMA.</p>
+
+        <img src="./images/page-karate-02.webp" class="blog-image" alt="Kenpo Karate practice" />
+      </section>
+
+      <section>
+        <h2>The Importance of MMA Conditioning and Fitness</h2>
+        <p>One of the toughest aspects of MMA is the conditioning. Fighters need endurance, power, and mental resilience to last through multiple rounds. MMA conditioning isn’t just about lifting weights – it’s about functional fitness that translates into combat scenarios. Cardio, strength training, and agility drills all play a role in keeping you fight-ready.</p>
+        <p>Our classes at Golden Tiger Academy incorporate functional fitness exercises that mimic real combat situations, improving your stamina, strength, and flexibility – all while preparing you for the physical demands of MMA.</p>
+      </section>
+
+      <section>
+        <h2>Start Your MMA Journey at Golden Tiger Academy</h2>
+        <p>At Golden Tiger Academy, located just outside Dublin in Dunboyne, we offer a comprehensive range of martial arts classes that are essential to developing the skills you need to train like an MMA fighter. Our Muay Thai, Kickboxing, Brazilian Jiu-Jitsu (BJJ), and Kenpo Karate classes are all integral to MMA, providing you with the techniques and fitness foundation to become well-rounded in the sport.</p>
+        <p>Whether you're training for self-defense, fitness, or to take your fighting skills to the next level, Golden Tiger Academy is the top choice for MMA Dublin and MMA Ireland. Our expert instructors will guide you through each discipline, ensuring you develop the power, precision, and endurance needed for MMA.</p>
+      </section>
+    </main>
+
+    <!-- Section - Ready To Join -->
+    <section class="ready-to-join-container-outer">
+      <div class="ready-to-join-container-inner">
+        <h3>Ready to Begin?</h3>
+        <p>Ready to jump in and join us? Get started by contacting us to set up your free trial class</p>
+        <div class="cta-container">
+          <div class="cta-wrap draw-border">
+            <a href="./contact-us" class="cta cta-1-contact-us"> <i class="fa fa-envelope"></i> Contact Us</a>
+          </div>
+          <div class="cta-wrap draw-border draw-border-white">
+            <a href="tel:0872333481" class="cta cta-2-call-us"> <i class="fa fa-solid fa-phone fa-flip-horizontal"></i> Call Us Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner-container">
+        <div class="address">
+          <span class="logo"><a href="./">Golden Tiger Academy</a></span>
+          <div class="address-text">
+            Address: Unit 10, Dunboyne Business Park, <br />
+            Dunboyne, Co. Meath, A86 WR26
+          </div>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/goldentigeracademy/" target="_blank">
+              <i class="fa fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/kengoldentiger/" target="_blank">
+              <i class="fa fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+
+            <a href="./contact-us">
+              <i class="fa fa-envelope"></i>
+              <span class="sr-only">Email Us Now</span>
+            </a>
+            <a href="tel:0872333481">
+              <i class="fa fa-solid fa-phone fa-flip-horizontal"></i>
+              <span class="sr-only">Call Us Now</span>
+            </a>
+          </div>
+          <a href="https://www.linkedin.com/in/shanemcgeown/" class="designed-by">Designed by: shanemcgeown</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./animate.js"></script>
+  </body>
+</html>
