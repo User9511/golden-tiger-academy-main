@@ -114,6 +114,10 @@ function toggleAccordion(index) {
 }
 
 // Shop Card Flip
-function toggleFlip(card) {
-  card.classList.toggle("flipped");
-}
+// function toggleFlip(card) {
+//   if (card.classList.contains("flipped")) {
+//     card.classList.remove("flipped");
+//   } else {
+//     card.classList.add("flipped");
+//   }
+// }

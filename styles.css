@@ -787,6 +787,23 @@ aside.arrow:after {
   color: var(--theme-color-3);
 }
 
+/* ------------ Shop Section ----------- */
+.shop-section-container-outer {
+  background-color: var(--theme-color-2) !important;
+}
+
+.shop-section-container-outer h2 {
+  position: relative;
+  top: 4.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  color: var(--theme-color-3);
+}
+
 /* Grid container for the cards */
 .flip-card-container {
   display: grid;
@@ -810,27 +827,25 @@ aside.arrow:after {
   transform-style: preserve-3d;
 }
 
-/* Flip on hover for desktop and on click for mobile */
-.flip-card:hover .flip-card-inner,
-.flip-card.flipped .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
 /* Front and back of each card */
 .flip-card-front,
 .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
-  background-color: transparent;
+  backface-visibility: hidden; /* Hide back face when front is visible */
   top: 0;
   left: 0;
 }
 
 /* Back of the card */
 .flip-card-back {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* Initially rotate the back */
+}
+
+/* Flip on hover for desktop */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); /* Flip to show back on hover */
 }
 
 /* Image styling */
@@ -850,31 +865,12 @@ aside.arrow:after {
 .product-info .product-name {
   font-size: 1.1em;
   font-weight: bold;
-  color: #333;
-}
-
-.product-info .product-price {
-  font-size: 1em;
-  color: #888;
-  margin-top: 4px;
-}
-
-/* Product info styling */
-.product-info {
-  text-align: center;
-  margin-top: 10px;
-  font-family: Arial, sans-serif;
-}
-
-.product-info .product-name {
-  font-size: 1.1em;
-  font-weight: bold;
   color: var(--theme-color-3);
 }
 
 .product-info .product-price {
   font-size: 1em;
-  color: #fffff07b;
+  color: #fffff07b; /* Slightly transparent white */
   margin-top: 4px;
 }
 
