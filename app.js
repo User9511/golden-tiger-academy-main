@@ -112,16 +112,3 @@ function toggleAccordion(index) {
     answers[index].setAttribute("aria-hidden", false);
   }
 }
-
-// Shop Card Flip
-function toggleFlip(card) {
-  // Remove the 'flipped' class from all cards
-  const allCards = document.querySelectorAll(".flip-card");
-  allCards.forEach((c) => {
-    if (c !== card) {
-      c.classList.remove("flipped");
-    }
-  });
-  // Toggle the 'flipped' class on the clicked card
-  card.classList.toggle("flipped");
-}
