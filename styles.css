@@ -810,8 +810,9 @@ aside.arrow:after {
   transform-style: preserve-3d;
 }
 
-/* Flip on hover */
-.flip-card:hover .flip-card-inner {
+/* Flip on hover for desktop and on click for mobile */
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -837,6 +838,25 @@ aside.arrow:after {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* Product info styling */
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.product-info .product-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-info .product-price {
+  font-size: 1em;
+  color: #888;
+  margin-top: 4px;
 }
 
 /* Product info styling */

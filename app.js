@@ -112,3 +112,8 @@ function toggleAccordion(index) {
     answers[index].setAttribute("aria-hidden", false);
   }
 }
+
+// Shop Card Flip
+function toggleFlip(card) {
+  card.classList.toggle("flipped");
+}
