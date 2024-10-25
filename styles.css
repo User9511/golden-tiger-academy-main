@@ -891,6 +891,25 @@ body > section.shop-section-container-outer > div.cta-wrap.draw-border > a {
   color: black;
 }
 
+/* ... previous CSS remains the same ... */
+
+/* Flip on hover for desktop */
+@media (min-width: 768px) {
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Flip to show back on hover */
+  }
+}
+
+/* Flip on click for mobile */
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg); /* Flip to show back */
+}
+
+/* Ensure that cards return to the original position when flipped back */
+.flip-card:not(.flipped) .flip-card-inner {
+  transform: rotateY(0deg); /* Make sure it's back to original */
+}
+
 /*------------------ FAQ Section ------------------ */
 .faq-section-container-outer {
   background-color: var(--theme-color-1);
