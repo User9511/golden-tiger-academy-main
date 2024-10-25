@@ -848,6 +848,11 @@ aside.arrow:after {
   transform: rotateY(180deg); /* Flip to show back on hover */
 }
 
+/* Flip on click for mobile */
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg); /* Flip to show back */
+}
+
 /* Image styling */
 .flip-card img {
   width: 100%;

@@ -114,10 +114,14 @@ function toggleAccordion(index) {
 }
 
 // Shop Card Flip
-// function toggleFlip(card) {
-//   if (card.classList.contains("flipped")) {
-//     card.classList.remove("flipped");
-//   } else {
-//     card.classList.add("flipped");
-//   }
-// }
+function toggleFlip(card) {
+  // Remove the 'flipped' class from all cards
+  const allCards = document.querySelectorAll(".flip-card");
+  allCards.forEach((c) => {
+    if (c !== card) {
+      c.classList.remove("flipped");
+    }
+  });
+  // Toggle the 'flipped' class on the clicked card
+  card.classList.toggle("flipped");
+}
