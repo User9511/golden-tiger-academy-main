@@ -770,6 +770,105 @@ aside.arrow:after {
 .icon-google {
   max-width: 1.25rem;
 }
+/* ------------ Shop Section ----------- */
+.shop-section-container-outer {
+  background-color: var(--theme-color-2) !important;
+}
+
+.shop-section-container-outer h2 {
+  position: relative;
+  top: 4.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+  color: var(--theme-color-3);
+}
+
+/* Grid container for the cards */
+.flip-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Container for each card */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+/* Flip effect for each card */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  padding-top: 150%; /* Maintain aspect ratio */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Flip on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back of each card */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+}
+
+/* Back of the card */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Image styling */
+.flip-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Product info styling */
+.product-info {
+  text-align: center;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.product-info .product-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--theme-color-3);
+}
+
+.product-info .product-price {
+  font-size: 1em;
+  color: #fffff07b;
+  margin-top: 4px;
+}
+
+body > section.shop-section-container-outer > div.cta-wrap.draw-border {
+  position: relative;
+  bottom: 3.5rem;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+body > section.shop-section-container-outer > div.cta-wrap.draw-border > a {
+  background-color: white;
+  color: black;
+}
 
 /*------------------ FAQ Section ------------------ */
 .faq-section-container-outer {
