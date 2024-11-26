@@ -1033,7 +1033,7 @@ button[aria-expanded="true"] + .faq-answer {
 
 /* Class Page - First Class */
 .first-class-container-outer {
-  background-color: var(--theme-color-1);
+  background-color: var(--theme-color-4);
   text-align: center;
 }
 
