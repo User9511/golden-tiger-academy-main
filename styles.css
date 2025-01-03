@@ -386,6 +386,13 @@ nav a:hover::after {
   margin: 0.5rem 0;
 }
 
+/* New about us image css */
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional for styling */
+}
+
 /* Our Classes */
 #our-classes h2 {
   position: relative;
