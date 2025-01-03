@@ -1259,7 +1259,6 @@ footer {
   color: var(--accent-color-3);
   font-size: 0.8rem;
   bottom: 0.75rem;
-  margin: 0 auto;
 }
 
 /* ------------- Gallery Page --------------- */
@@ -1846,12 +1845,9 @@ body#blog-page main {
   text-align: center;
 }
 
-.blog-container-outer {
-}
-
 .blog-container-inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
   gap: 3rem;
   max-width: 75rem;
   margin: 8rem auto 0 auto;
@@ -1876,7 +1872,8 @@ body#blog-page main {
 }
 
 .blog-card-title {
-  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0.75rem;
 }
 
 .blog-card-text {
