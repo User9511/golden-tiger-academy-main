@@ -1224,9 +1224,9 @@ footer {
 }
 
 .footer-inner-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  align-items: end;
   max-width: 75rem;
   margin: 0 auto;
   padding: 1rem;
@@ -1254,11 +1254,17 @@ footer {
   font-size: 0.8rem;
 }
 
-.designed-by {
+.read-blog {
+  margin: 0.2rem 0 0 0;
+}
+
+.designed-by,
+.read-blog {
   display: block;
   color: var(--accent-color-3);
   font-size: 0.8rem;
   bottom: 0.75rem;
+  text-align: center;
 }
 
 /* ------------- Gallery Page --------------- */
@@ -2121,6 +2127,19 @@ body#blog-page main {
 
   .designed-by {
     margin-top: 1rem;
+  }
+
+  .read-blog {
+    margin: 1.5rem 0 0 0;
+  }
+
+  .designed-by,
+  .read-blog {
+    display: block;
+    color: var(--accent-color-3);
+    font-size: 0.8rem;
+    bottom: 0.75rem;
+    text-align: center;
   }
 
   /* Contact Us Page*/
