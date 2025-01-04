@@ -1994,7 +1994,6 @@ body#blog-page main {
   .hero-section-inner {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.5rem;
     justify-items: center;
     max-width: 75rem;
     text-align: center;
@@ -2012,7 +2011,7 @@ body#blog-page main {
   .hero-image-container {
     order: 1;
     max-width: 15rem;
-    height: auto;
+    height: 80%;
   }
   .hero-text-container {
     order: 2;
