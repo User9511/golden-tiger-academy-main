@@ -2011,7 +2011,7 @@ body#blog-page main {
   .hero-image-container {
     order: 1;
     max-width: 15rem;
-    height: 80%;
+    height: 120px;
   }
   .hero-text-container {
     order: 2;
