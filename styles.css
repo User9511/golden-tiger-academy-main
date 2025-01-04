@@ -1997,7 +1997,7 @@ body#blog-page main {
     justify-items: center;
     max-width: 75rem;
     text-align: center;
-    padding: 6rem 1rem;
+    padding: 5rem 1rem;
   }
 
   #hero-header {
@@ -2007,6 +2007,7 @@ body#blog-page main {
 
   #hero-subheader {
     font-size: 1rem;
+    line-height: 1.6;
   }
 
   .hero-image-container {
@@ -2017,7 +2018,7 @@ body#blog-page main {
   .hero-text-container {
     order: 2;
     justify-items: center;
-    gap: 0;
+    gap: 1.5rem;
   }
 
   .cta-container {
