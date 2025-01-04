@@ -2002,6 +2002,7 @@ body#blog-page main {
 
   #hero-header {
     font-size: 1.4rem;
+    margin-top: 1rem;
   }
 
   #hero-subheader {
@@ -2016,6 +2017,7 @@ body#blog-page main {
   .hero-text-container {
     order: 2;
     justify-items: center;
+    gap: 0;
   }
 
   .cta-container {
