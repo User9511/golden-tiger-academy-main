@@ -2011,12 +2011,11 @@ body#blog-page main {
   .hero-image-container {
     order: 1;
     max-width: 15rem;
-    height: 120px;
+    height: 100px;
   }
   .hero-text-container {
     order: 2;
     justify-items: center;
-    gap: 2rem;
   }
 
   .cta-container {
