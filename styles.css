@@ -237,6 +237,8 @@ nav a:hover::after {
 
 .hero-image-container {
   max-height: 25rem;
+  width: auto;
+  justify-self: center;
 }
 
 /* CTA's */
@@ -2010,6 +2012,7 @@ body#blog-page main {
   .hero-image-container {
     order: 1;
     max-width: 15rem;
+    height: auto;
   }
   .hero-text-container {
     order: 2;
