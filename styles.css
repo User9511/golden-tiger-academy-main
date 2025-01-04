@@ -2304,6 +2304,20 @@ body#blog-page main {
     grid-template-columns: 1fr;
   }
 
+  /* Blog Navigation */
+  .blog-navigation a {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-chevron-left::before {
+    margin-right: 1rem;
+  }
+  .fa-chevron-right::before {
+    margin-left: 1rem;
+  }
+
   /* Lightbulb */
   .bulb-container {
     position: absolute;
