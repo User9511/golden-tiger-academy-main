@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const blogPosts = [
-    { title: "MMA Near Dublin: Train Like a Fighter", url: "/blog/mma.html" },
+    { title: "MMA Near Dublin: Train Like a Fighter", url: "/blog/mma-dublin.html" },
     { title: "What is BJJ? Learn the Basics", url: "/blog/what-is-brazilian-jiu-jitsu-bjj.html" },
     { title: "Brazilian Jiu-Jitsu (BJJ) Belts Explained", url: "/blog/bjj-belts-explained.html" },
     { title: "Muay Thai Near Dublin: Start Training", url: "/blog/muay-thai-dublin.html" },
