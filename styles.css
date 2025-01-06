@@ -2236,7 +2236,7 @@ body#blog-page main {
   /* 404 Error Page */
   .error-404-outer-container {
     display: grid;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
   }
 
