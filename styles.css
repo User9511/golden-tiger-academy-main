@@ -1277,6 +1277,15 @@ footer {
 }
 
 /* ------------- Gallery Page --------------- */
+
+.gallery-title {
+  position: relative;
+  top: 7rem;
+  font-size: 2rem;
+  color: var(--theme-color-4);
+  text-align: center;
+}
+
 .gallery-container-inner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -2345,6 +2354,11 @@ body#blog-page main {
     width: 10px;
     height: 8.5px;
   }
+}
+
+/* Gallery Page */
+.gallery-title {
+  font-size: 1.25rem;
 }
 
 /* Our Classes Card Hover State on Touch Devices */
