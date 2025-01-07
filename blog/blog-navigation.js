@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const blogPosts = [
+    { title: "Muay Thai Drills for Beginners: Kickstart Your Training", url: "/blog/muay-thai-drills-for-beginners.html" },
     { title: "MMA Near Dublin: Train Like a Fighter", url: "/blog/mma-dublin.html" },
     { title: "What is BJJ? Learn the Basics", url: "/blog/what-is-brazilian-jiu-jitsu-bjj.html" },
     { title: "Brazilian Jiu-Jitsu (BJJ) Belts Explained", url: "/blog/bjj-belts-explained.html" },
