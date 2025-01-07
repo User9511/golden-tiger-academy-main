@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222579198944867" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-K6FXLSWW");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 850325,
+            version = 2.1,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style = "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(localStorage.getItem("_vwo_" + account_id + "_config"));
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined" ? use_existing_jquery : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined" ? library_tolerance : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              if (performance.getEntriesByName("first-contentful-paint")[0]) {
+                return "";
+              }
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function (e) {
+              if (!f) {
+                f = true;
+                var t = d.getElementById("_vis_opt_path_hides");
+                if (t) t.parentNode.removeChild(t);
+                if (e) new Image().src = "https://dev.visualwebsiteoptimizer.com/ee.gif?a=" + account_id + e;
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            addScript: function (e) {
+              var t = d.createElement("script");
+              t.type = "text/javascript";
+              if (e.src) {
+                t.src = e.src;
+              } else {
+                t.text = e.text;
+              }
+              d.getElementsByTagName("head")[0].appendChild(t);
+            },
+            load: function (e, t) {
+              var i = this.getSettings(),
+                n = d.createElement("script"),
+                r = this;
+              t = t || {};
+              if (i) {
+                n.textContent = i;
+                d.getElementsByTagName("head")[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  r.load(e);
+                }
+              } else {
+                var o = new XMLHttpRequest();
+                o.open("GET", e, true);
+                o.withCredentials = !t.dSC;
+                o.responseType = t.responseType || "text";
+                o.onload = function () {
+                  if (t.onloadCb) {
+                    return t.onloadCb(o, e);
+                  }
+                  if (o.status === 200) {
+                    _vwo_code.addScript({ text: o.responseText });
+                  } else {
+                    _vwo_code.finish("&e=loading_failure:" + e);
+                  }
+                };
+                o.onerror = function () {
+                  if (t.onerrorCb) {
+                    return t.onerrorCb(e);
+                  }
+                  _vwo_code.finish("&e=loading_failure:" + e);
+                };
+                o.send();
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t;
+              if (this.hide_element() !== "body") {
+                t = d.createElement("style");
+                var i = this.hide_element(),
+                  n = i ? i + this.hide_element_style() : "",
+                  r = d.getElementsByTagName("head")[0];
+                t.setAttribute("id", "_vis_opt_path_hides");
+                v && t.setAttribute("nonce", v.nonce);
+                t.setAttribute("type", "text/css");
+                if (t.styleSheet) t.styleSheet.cssText = n;
+                else t.appendChild(d.createTextNode(n));
+                r.appendChild(t);
+              } else {
+                t = d.getElementsByTagName("head")[0];
+                var n = d.createElement("div");
+                n.style.cssText = "z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;";
+                n.setAttribute("id", "_vis_opt_path_hides");
+                n.classList.add("_vis_hide_layer");
+                t.parentNode.insertBefore(n, t.nextSibling);
+              }
+              var o = "https://dev.visualwebsiteoptimizer.com/j.php?a=" + account_id + "&u=" + encodeURIComponent(d.URL) + "&vn=" + version;
+              if (w.location.search.indexOf("_vwo_xhr") !== -1) {
+                this.addScript({ src: o });
+              } else {
+                this.load(o + "&x=true");
+              }
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+    <!-- Schema Article -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Muay Thai Drills for Beginners: Kickstart Your Training",
+        "author": {
+          "@type": "Person",
+          "name": "Your Name"
+        },
+        "datePublished": "2025-01-07",
+        "image": "https://goldentigeracademy.com/images/muay-thai-drills-beginners.webp",
+        "articleBody": "Muay Thai, known as the “Art of Eight Limbs,” is a powerful striking martial art that incorporates punches, kicks, elbows, and knees...",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Golden Tiger Academy",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://goldentigeracademy.com/logo.jpg"
+          }
+        },
+        "description": "Explore essential Muay Thai drills for beginners to boost your skills and confidence. Start training effectively today!"
+      }
+    </script>
+
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/f9aefcac71.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffa126" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore essential Muay Thai drills for beginners to boost your skills and confidence. Start training effectively today!
+
+    "
+    />
+    <title>Muay Thai Drills for Beginners: Kickstart Your Training</title>
+  </head>
+  <body id="blog-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6FXLSWW" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div class="header-content-container-inner">
+        <span class="logo"><a href="/">Golden Tiger Academy</a></span>
+        <nav>
+          <button class="mobile-menu-button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle Menu">
+            <svg fill="var(--theme-color-3)" class="hamburger" viewBox="0 0 100 100" width="25">
+              <rect class="line top" y="25" rx="5" x="0" width="100" height="10"></rect>
+              <rect class="line middle" y="45" rx="5" x="0" width="100" height="10"></rect>
+              <rect class="line bottom" y="65" rx="5" x="0" width="100" height="10"></rect>
+            </svg>
+          </button>
+
+          <div class="mobile-nav-wrapper">
+            <ul id="primary-navigation">
+              <li><a href="/" class="nav-link">Home</a></li>
+              <li><a href="/#about-us" class="nav-link">About us</a></li>
+              <li><a href="/#our-classes" class="nav-link">Our Classes</a></li>
+              <li><a href="/#faqs" class="nav-link">FAQs</a></li>
+              <li><a href="/#timetable" class="nav-link">Timetable</a></li>
+              <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+              <li><a href="/contact-us" class="nav-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>Muay Thai Drills for Beginners: Kickstart Your Training</h1>
+
+        <p>Muay Thai, known as the “Art of Eight Limbs,” is a powerful striking martial art that incorporates punches, kicks, elbows, and knees. For beginners, mastering the fundamentals through effective drills is essential for building confidence and skill. In this article, we’ll explore some of the best Muay Thai drills that will help you kickstart your training and lay a solid foundation for your journey in this dynamic sport.</p>
+      </section>
+
+      <section>
+        <h2>1. Muay Thai Basic Stance and Footwork Drill</h2>
+        <p>Understanding your stance and footwork is crucial in Muay Thai. Start by practicing your basic stance:</p>
+        <ul class="blog-bullet-point-list">
+          <li>Stand with your feet shoulder-width apart.</li>
+          <li>Keep your knees slightly bent and weight distributed evenly.</li>
+          <li>Practice shifting your weight from one foot to another while maintaining balance.</li>
+        </ul>
+        <p>Incorporate lateral movements by stepping side to side. This drill will enhance your mobility and readiness to strike or evade attacks.</p>
+
+        <img src="/images/muay-thai-stance.webp" class="blog-image" alt="Muay Thai Stance" />
+      </section>
+
+      <section>
+        <h2>2. Jab-Cross Combination</h2>
+        <p>The jab-cross combination is fundamental in Muay Thai striking. To practice:</p>
+        <ul class="blog-bullet-point-list">
+          <li>Begin in your fighting stance.</li>
+          <li>Throw a quick jab with your lead hand, followed by a powerful cross with your rear hand.</li>
+          <li>Focus on speed and accuracy; ensure your punches are straight and controlled.</li>
+        </ul>
+        <p>This drill helps develop hand speed and timing, essential for effective striking in sparring or competition.</p>
+
+        <div class="tenor-gif-embed" data-postid="13534094" data-share-method="host" data-aspect-ratio="1.77515" data-width="100%" title="Punch Sparring GIF">
+          <span class="sr-only">Punch Sparring GIF</span>
+          <a href="https://tenor.com/view/punch-sparring-fight-me-boxing-mma-gif-13534094">Punch Sparring GIF</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+      </section>
+
+      <section class="front-teep">
+        <h2>3. Muay Thai Front Kick (Teep) Practice</h2>
+        <p>The front kick, or teep, is a versatile tool for maintaining distance. Here’s how to practice it:</p>
+        <ul class="blog-bullet-point-list">
+          <li>From your stance, lift your knee towards your chest.</li>
+          <li>Extend your leg forward, striking with the ball of your foot.</li>
+          <li>Retract quickly to return to your stance.</li>
+        </ul>
+        <p>This drill improves balance and distance control, allowing you to keep opponents at bay effectively.</p>
+        <img src="/images/muay-thai-teep.webp" class="blog-image" alt="Muay Thai Teep" />
+      </section>
+
+      <section>
+        <h2>4. Muay Thai Elbow Strikes Drill</h2>
+        <p>Elbow strikes are crucial in close-range combat. To practice:</p>
+        <ul class="blog-bullet-point-list">
+          <li>Stand in your fighting stance.</li>
+          <li>Practice horizontal and diagonal elbow strikes by pivoting your hips and shoulders into the movement.</li>
+          <li>Focus on accuracy by targeting a bag or pad held by a partner.</li>
+        </ul>
+        <p>This drill enhances your striking arsenal and prepares you for clinch situations where elbow strikes are effective.</p>
+
+        <img src="/images/mauy-thai-elbow.webp" class="blog-image" alt="Muay Thai elbow strike practice" />
+      </section>
+
+      <section class="shadow-boxing">
+        <h2>5. Muay Thai Shadow Boxing</h2>
+        <p>Shadow boxing is an excellent way to integrate all techniques learned. To perform this drill:</p>
+        <ul class="blog-bullet-point-list">
+          <li>Find a space where you can move freely.</li>
+          <li>Visualize an opponent as you throw punches, kicks, elbows, and knees.</li>
+          <li>Focus on fluidity, technique, and movement as you practice combinations.</li>
+        </ul>
+        <p>This drill helps improve timing, rhythm, and overall technique without the pressure of sparring. Check out this Muay Thai shadow boxing drills for beginners video from Sean Fagan</p>
+
+        <iframe width="536" height="315" class="blog-youtube-videos" src="https://www.youtube.com/embed/uFJSSYECov4?si=SToQek7IcqlPiiLH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section class="conclusion">
+        <h2>Conclusion</h2>
+        <p>Incorporating these Muay Thai drills into your training routine will help you build a strong foundation as a beginner. Consistency is key—practice regularly to improve your skills and confidence. At Golden Tiger Academy, we offer classes tailored for beginners where you can learn under the guidance of experienced instructors. Join us today to kickstart your journey in Muay Thai!</p>
+      </section>
+    </main>
+
+    <!-- Navigation Links -->
+    <div class="blog-navigation-container">
+      <div class="blog-navigation">
+        <a id="previous-link" href="#"> <i class="fa fa-chevron-left"></i> Previous Post </a>
+        <a href="/blog">Back to Blog</a>
+        <a id="next-link" href="#"> Next Post <i class="fa fa-chevron-right"></i> </a>
+      </div>
+    </div>
+
+    <!-- Section - Ready To Join -->
+    <section class="ready-to-join-container-outer">
+      <div class="ready-to-join-container-inner">
+        <h3>Ready to Begin?</h3>
+        <p>Ready to jump in and join us? Get started by contacting us to set up your free trial class</p>
+        <div class="cta-container">
+          <div class="cta-wrap draw-border">
+            <a href="/contact-us" class="cta cta-1-contact-us"> <i class="fa fa-envelope"></i> Contact Us</a>
+          </div>
+          <div class="cta-wrap draw-border draw-border-white">
+            <a href="tel:0872333481" class="cta cta-2-call-us"> <i class="fa fa-solid fa-phone fa-flip-horizontal"></i> Call Us Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner-container">
+        <div class="address">
+          <span class="logo"><a href="./">Golden Tiger Academy</a></span>
+          <div class="address-text">
+            Address: Unit 10, Dunboyne Business Park, <br />
+            Dunboyne, Co. Meath, A86 WR26
+          </div>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/goldentigeracademy/" target="_blank">
+              <i class="fa fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/kengoldentiger/" target="_blank">
+              <i class="fa fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+
+            <a href="/contact-us">
+              <i class="fa fa-envelope"></i>
+              <span class="sr-only">Email Us Now</span>
+            </a>
+            <a href="tel:0872333481">
+              <i class="fa fa-solid fa-phone fa-flip-horizontal"></i>
+              <span class="sr-only">Call Us Now</span>
+            </a>
+          </div>
+          <a href="/blog" class="read-blog">check out our blog</a>
+          <a href="https://www.linkedin.com/in/shanemcgeown/" class="designed-by">Designed by: shanemcgeown</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./blog-navigation.js"></script>
+    <script src="/mobile-nav.js"></script>
+  </body>
+</html>

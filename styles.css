@@ -1929,6 +1929,42 @@ body#blog-page main {
   margin-left: 1rem;
 }
 
+/* Blog Post Page */
+.blog-bullet-point-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0 1rem 2rem;
+}
+.blog-bullet-point-list li {
+  list-style-type: disc;
+}
+
+.blog-youtube-videos {
+  border-radius: 1.5rem;
+}
+
+/* Jab Cross GIf  */
+.tenor-gif-embed {
+}
+
+.tenor-gif-embed iframe {
+  border-radius: 1.5rem;
+  margin: 3rem 0;
+}
+
+section.front-teep {
+  margin-top: 3rem;
+}
+
+section.shadow-boxing iframe {
+  margin-top: 3rem;
+}
+
+section.conclusion {
+  margin-top: 23rem;
+}
+
 /* Tablet Layout */
 @media screen and (min-width: 48rem) and (max-width: 53rem) {
   nav ul {
@@ -2326,6 +2362,15 @@ body#blog-page main {
   }
   .fa-chevron-right::before {
     margin-left: 1rem;
+  }
+
+  /* Blog Post Page */
+  section.shadow-boxing iframe {
+    width: 100%;
+  }
+
+  section.conclusion {
+    margin-top: 0;
   }
 
   /* Lightbulb */
