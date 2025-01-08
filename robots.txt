@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /kung-fu.html
+Disallow: /kenpo-karate-sign-up.html
 Disallow: /cgi-bin/
 Sitemap: https://goldentigeracademy.com/sitemap.xml
