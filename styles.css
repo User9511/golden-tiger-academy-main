@@ -1890,6 +1890,7 @@ body#blog-page main {
 
 .blog-card img {
   border-radius: 1rem;
+  height: 205px;
 }
 
 .blog-card-eyebrow {
@@ -1901,6 +1902,72 @@ body#blog-page main {
 }
 
 .blog-card-text {
+}
+
+/* Blog Card Eyebrow
+.blog-card-eyebrow {
+  position: relative;
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Underline effect when hovering over the <a> */
+
+/* a:hover .blog-card-eyebrow::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color-1);
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+  border-radius: 1rem;
+}
+
+.blog-card-eyebrow::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color-1);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+  border-radius: 1rem;
+}  */
+
+/* Blog Card Eyebrow */
+.blog-card-eyebrow {
+  position: relative;
+  display: inline-block; /* Ensures the element is only as wide as its content */
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Underline effect when hovering over the <a> */
+a:hover .blog-card-eyebrow::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color-1);
+  height: 3px;
+  width: 100%; /* Matches the width of the text inside */
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+  border-radius: 1rem;
+}
+
+.blog-card-eyebrow::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color-1);
+  height: 3px;
+  width: 0; /* Start with no underline */
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+  border-radius: 1rem;
 }
 
 /* Blog Navigation */
@@ -1944,9 +2011,7 @@ body#blog-page main {
   border-radius: 1.5rem;
 }
 
-/* Jab Cross GIf  */
-.tenor-gif-embed {
-}
+/* Jab Cross MP4  */
 
 .tenor-gif-embed iframe {
   border-radius: 1.5rem;
