@@ -593,6 +593,14 @@ nav a:hover::after {
   animation-range: entry 50% cover 50%;
 }
 
+/* Longer text benefits h2 */
+#class-muay-thai-body .benefits:nth-of-type(1),
+#class-kickboxing-body .benefits:nth-of-type(1),
+#class-korean-kickboxing-body .benefits:nth-of-type(1),
+#class-karate-body .benefits:nth-of-type(1) {
+  margin-top: 4rem;
+}
+
 .benefits-text-container h2::after {
   content: "";
   position: absolute;
