@@ -1912,38 +1912,9 @@ body#blog-page main {
 .blog-card-text {
 }
 
-/* Blog Card Eyebrow
-.blog-card-eyebrow {
-  position: relative;
-  color: inherit;
-  font-weight: bold;
+#blog footer {
+  margin-top: 4rem;
 }
-
-/* Underline effect when hovering over the <a> */
-
-/* a:hover .blog-card-eyebrow::after {
-  content: "";
-  position: absolute;
-  background-color: var(--accent-color-1);
-  height: 3px;
-  width: 100%;
-  left: 0;
-  bottom: -5px;
-  transition: width 0.3s ease;
-  border-radius: 1rem;
-}
-
-.blog-card-eyebrow::after {
-  content: "";
-  position: absolute;
-  background-color: var(--accent-color-1);
-  height: 3px;
-  width: 0;
-  left: 0;
-  bottom: -5px;
-  transition: width 0.3s ease;
-  border-radius: 1rem;
-}  */
 
 /* Blog Card Eyebrow */
 .blog-card-eyebrow {
