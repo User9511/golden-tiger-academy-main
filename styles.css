@@ -1990,6 +1990,14 @@ a:hover .blog-card-eyebrow::after {
   border-radius: 1.5rem;
 }
 
+#blog-page section ul,
+#blog-page section ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 0 1rem 2rem;
+}
+
 #blog-page section ol li {
   list-style: decimal !important;
 }
