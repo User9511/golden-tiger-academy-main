@@ -1990,6 +1990,14 @@ a:hover .blog-card-eyebrow::after {
   border-radius: 1.5rem;
 }
 
+#blog-page section ol li {
+  list-style: decimal !important;
+}
+
+#blog-page section ul li {
+  list-style: disc !important;
+}
+
 /* Jab Cross MP4  */
 
 .tenor-gif-embed iframe {
