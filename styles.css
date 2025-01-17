@@ -2297,7 +2297,7 @@ section.conclusion {
     order: 1;
     min-height: 15rem;
     border-radius: 0;
-    width: inherit;
+    /* width: inherit; */
     height: inherit;
   }
 
