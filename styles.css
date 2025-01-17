@@ -1881,7 +1881,7 @@ body#blog-page main {
 .blog-container-inner {
   display: grid;
   grid-template-columns: repeat(3, minmax(50px, 1fr));
-  gap: 3rem;
+  gap: 4rem;
   max-width: 75rem;
   margin: 8rem auto 0 auto;
   padding: 1rem;
