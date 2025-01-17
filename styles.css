@@ -631,7 +631,7 @@ nav a:hover::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  align-items: end;
+  align-items: baseline;
   position: relative;
   text-align: left;
   margin-top: 8rem;
