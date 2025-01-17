@@ -21,6 +21,7 @@
   --accent-color-3: #878e99;
   --accent-color-4: #09c372;
   --accent-color-5: #ffb803;
+  --accent-color-6: #0011ff;
   /* CTA Colors */
 
   --cta-color-1: #092327;
@@ -1988,6 +1989,7 @@ a:hover .blog-card-eyebrow::after {
 
 .blog-youtube-videos {
   border-radius: 1.5rem;
+  height: 400px;
 }
 
 #blog-page section ul,
@@ -2004,6 +2006,14 @@ a:hover .blog-card-eyebrow::after {
 
 #blog-page section ul li {
   list-style: disc !important;
+}
+
+#blog-page main h3 {
+  margin-top: 1rem;
+}
+
+#blog-page main a {
+  color: var(--accent-color-6);
 }
 
 /* Jab Cross MP4  */
