@@ -1900,6 +1900,7 @@ body#blog-page main {
 .blog-card img {
   border-radius: 1rem;
   height: 205px;
+  object-fit: cover;
 }
 
 .blog-card-eyebrow {
