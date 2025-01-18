@@ -887,6 +887,7 @@ aside.arrow:after {
   transform-style: preserve-3d;
   background-color: var(--theme-color-1);
   outline: 2px solid var(--theme-color-3);
+  border-radius: 0.5rem;
 }
 
 /* Front and back of each card */
