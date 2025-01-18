@@ -885,6 +885,8 @@ aside.arrow:after {
   padding-top: 150%; /* Maintain aspect ratio */
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  background-color: var(--theme-color-1);
+  outline: 2px solid var(--theme-color-3);
 }
 
 /* Front and back of each card */
