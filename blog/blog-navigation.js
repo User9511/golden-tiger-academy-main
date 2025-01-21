@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const blogPosts = [
+    { title: "Karate Belts Explained: A Guide to Colors and Ranks", url: "/blog/karate-belts-explained.html" },
+    { title: "How to Tie Your BJJ Belt: A Beginner's Guide", url: "/blog/how-to-tie-bjj-belt.html" },
     { title: "Muay Thai Drills for Beginners: Kickstart Your Training", url: "/blog/muay-thai-drills-for-beginners.html" },
     { title: "MMA Near Dublin: Train Like a Fighter", url: "/blog/mma-dublin.html" },
     { title: "What is BJJ? Learn the Basics", url: "/blog/what-is-brazilian-jiu-jitsu-bjj.html" },
-    { title: "Brazilian Jiu-Jitsu (BJJ) Belts Explained", url: "/blog/bjj-belts-explained.html" },
+    { title: "Brazilian Jiu-Jitsu (BJJ) Belts Explained", url: "/blog/bjj-belts-in-order.html" },
     { title: "Muay Thai Near Dublin: Start Training", url: "/blog/muay-thai-dublin.html" },
   ];
 

@@ -1871,6 +1871,13 @@ body#blog-page main {
   margin: 3rem 0 0 0;
 }
 
+#blog-page h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: max-content;
+}
+
 /* Blog Homepage */
 #blog h1 {
   position: relative;
