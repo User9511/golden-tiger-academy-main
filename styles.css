@@ -2041,9 +2041,9 @@ section.shadow-boxing iframe {
   margin-top: 3rem;
 }
 
-section.conclusion {
+/* section.conclusion {
   margin-top: 23rem;
-}
+} */
 
 /* Tablet Layout */
 @media screen and (min-width: 48rem) and (max-width: 53rem) {
