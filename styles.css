@@ -269,7 +269,6 @@ nav a:hover::after {
 
 .cta-2-call-us {
   background-color: var(--cta-color-2);
-  color: var(--theme-color-2);
 }
 
 /* Added styles for hover effect on CTA buttons */
@@ -2126,7 +2125,7 @@ section.shadow-boxing iframe {
   }
 
   #hero-header {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-top: 1rem;
   }
 
@@ -2138,7 +2137,7 @@ section.shadow-boxing iframe {
   .hero-image-container {
     order: 1;
     max-width: 15rem;
-    height: 100px;
+    height: 180px;
   }
   .hero-text-container {
     order: 2;
