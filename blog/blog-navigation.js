@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const blogPosts = [
-    { title: "Karate Belts Explained: A Guide to Colors and Ranks", url: "/blog/karate-belts-explained.html" },
+    { title: "Kids BJJ Classes in Meath & Near Dublin – Build Confidence & Skills", url: "/blog/kids-bjj-classes.html" },
     { title: "How to Tie Your BJJ Belt: A Beginner's Guide", url: "/blog/how-to-tie-bjj-belt.html" },
     { title: "Muay Thai Drills for Beginners: Kickstart Your Training", url: "/blog/muay-thai-drills-for-beginners.html" },
     { title: "MMA Near Dublin: Train Like a Fighter", url: "/blog/mma-dublin.html" },
