@@ -264,7 +264,7 @@ nav a:hover::after {
 }
 
 .cta-1-contact-us {
-  background-color: var(--accent-color-1);
+  background-color: var(--cta-color-1);
 }
 
 .cta-2-call-us {
