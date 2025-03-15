@@ -247,7 +247,11 @@ nav a:hover::after {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  width: 79%;
+  width: 80%;
+}
+.hero-text-container .cta-container {
+  grid-template-columns: 1fr;
+  width: 17.5rem;
 }
 
 .cta {
@@ -264,11 +268,11 @@ nav a:hover::after {
 }
 
 .cta-1-contact-us {
-  background-color: var(--cta-color-1);
+  background-color: var(--theme-color-2);
 }
 
 .cta-2-call-us {
-  background-color: var(--cta-color-2);
+  background-color: var(--theme-color-2);
 }
 
 /* Added styles for hover effect on CTA buttons */
@@ -1033,7 +1037,8 @@ button[aria-expanded="true"] + .faq-answer {
 
 /* Ready To Join */
 .ready-to-join-container-outer {
-  background-color: var(--theme-color-4);
+  background-color: var(--theme-color-3);
+  color: var(--theme-color-2);
 }
 
 .ready-to-join-container-inner {
@@ -2023,6 +2028,11 @@ a:hover .blog-card-eyebrow::after {
 
 #blog-page main a {
   color: var(--accent-color-6);
+}
+
+#blog-page .ready-to-join-container-outer {
+  background-color: var(--theme-color-1);
+  color: var(--theme-color-3);
 }
 
 /* Jab Cross MP4  */
