@@ -210,6 +210,9 @@ nav a:hover::after {
 .shape-divider-bottom .theme-color-3 {
   fill: var(--theme-color-3);
 }
+.shape-divider-bottom .theme-color-4 {
+  fill: var(--theme-color-4);
+}
 
 .shape-divider-bottom.classes {
   position: absolute;
@@ -571,6 +574,26 @@ nav a:hover::after {
 .class-section-container-inner h1 {
   font-size: 3rem;
   font-weight: 400;
+}
+
+/* Our Black Belts */
+.our-black-belts-container-outer {
+  background-color: var(--theme-color-4);
+  text-align: center;
+}
+
+.our-black-belts-container-inner-text {
+  text-align: left;
+}
+
+.our-black-belts-container-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  text-align: center;
 }
 
 /* The Benefits */
@@ -1175,7 +1198,7 @@ th {
 /* Timetable Filter Classes */
 .filter-classes-container {
   display: grid;
-  grid-template-columns: repeat(7, minmax(50px, 1fr));
+  grid-template-columns: repeat(6, minmax(50px, 1fr));
   justify-content: center;
   gap: 1rem;
   position: relative;
