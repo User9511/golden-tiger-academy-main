@@ -551,6 +551,11 @@ nav a:hover::after {
   background-image: url("./images/our-classes-korean-kickboxing.webp");
 }
 
+/* Card - Personal Training  */
+.card-personal-training {
+  background-image: url("./images/our-classes-personal-training.JPG");
+}
+
 /* ------------ Class Page Layout ----------- */
 /* Hero - Intro Section */
 .class-intro-container-outer {
