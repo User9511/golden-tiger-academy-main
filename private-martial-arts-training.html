@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9222579198944867" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-K6FXLSWW");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Start VWO Async SmartCode -->
+    <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code ||
+        (function () {
+          var account_id = 850325,
+            version = 2.1,
+            settings_tolerance = 2000,
+            hide_element = "body",
+            hide_element_style = "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;transition:none !important;",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            w = window,
+            d = document,
+            v = d.querySelector("#vwoCode"),
+            cK = "_vwo_" + account_id + "_settings",
+            cc = {};
+          try {
+            var c = JSON.parse(localStorage.getItem("_vwo_" + account_id + "_config"));
+            cc = c && typeof c === "object" ? c : {};
+          } catch (e) {}
+          var stT = cc.stT === "session" ? w.sessionStorage : w.localStorage;
+          code = {
+            use_existing_jquery: function () {
+              return typeof use_existing_jquery !== "undefined" ? use_existing_jquery : undefined;
+            },
+            library_tolerance: function () {
+              return typeof library_tolerance !== "undefined" ? library_tolerance : undefined;
+            },
+            settings_tolerance: function () {
+              return cc.sT || settings_tolerance;
+            },
+            hide_element_style: function () {
+              return "{" + (cc.hES || hide_element_style) + "}";
+            },
+            hide_element: function () {
+              if (performance.getEntriesByName("first-contentful-paint")[0]) {
+                return "";
+              }
+              return typeof cc.hE === "string" ? cc.hE : hide_element;
+            },
+            getVersion: function () {
+              return version;
+            },
+            finish: function (e) {
+              if (!f) {
+                f = true;
+                var t = d.getElementById("_vis_opt_path_hides");
+                if (t) t.parentNode.removeChild(t);
+                if (e) new Image().src = "https://dev.visualwebsiteoptimizer.com/ee.gif?a=" + account_id + e;
+              }
+            },
+            finished: function () {
+              return f;
+            },
+            addScript: function (e) {
+              var t = d.createElement("script");
+              t.type = "text/javascript";
+              if (e.src) {
+                t.src = e.src;
+              } else {
+                t.text = e.text;
+              }
+              d.getElementsByTagName("head")[0].appendChild(t);
+            },
+            load: function (e, t) {
+              var i = this.getSettings(),
+                n = d.createElement("script"),
+                r = this;
+              t = t || {};
+              if (i) {
+                n.textContent = i;
+                d.getElementsByTagName("head")[0].appendChild(n);
+                if (!w.VWO || VWO.caE) {
+                  stT.removeItem(cK);
+                  r.load(e);
+                }
+              } else {
+                var o = new XMLHttpRequest();
+                o.open("GET", e, true);
+                o.withCredentials = !t.dSC;
+                o.responseType = t.responseType || "text";
+                o.onload = function () {
+                  if (t.onloadCb) {
+                    return t.onloadCb(o, e);
+                  }
+                  if (o.status === 200) {
+                    _vwo_code.addScript({ text: o.responseText });
+                  } else {
+                    _vwo_code.finish("&e=loading_failure:" + e);
+                  }
+                };
+                o.onerror = function () {
+                  if (t.onerrorCb) {
+                    return t.onerrorCb(e);
+                  }
+                  _vwo_code.finish("&e=loading_failure:" + e);
+                };
+                o.send();
+              }
+            },
+            getSettings: function () {
+              try {
+                var e = stT.getItem(cK);
+                if (!e) {
+                  return;
+                }
+                e = JSON.parse(e);
+                if (Date.now() > e.e) {
+                  stT.removeItem(cK);
+                  return;
+                }
+                return e.s;
+              } catch (e) {
+                return;
+              }
+            },
+            init: function () {
+              if (d.URL.indexOf("__vwo_disable__") > -1) return;
+              var e = this.settings_tolerance();
+              w._vwo_settings_timer = setTimeout(function () {
+                _vwo_code.finish();
+                stT.removeItem(cK);
+              }, e);
+              var t;
+              if (this.hide_element() !== "body") {
+                t = d.createElement("style");
+                var i = this.hide_element(),
+                  n = i ? i + this.hide_element_style() : "",
+                  r = d.getElementsByTagName("head")[0];
+                t.setAttribute("id", "_vis_opt_path_hides");
+                v && t.setAttribute("nonce", v.nonce);
+                t.setAttribute("type", "text/css");
+                if (t.styleSheet) t.styleSheet.cssText = n;
+                else t.appendChild(d.createTextNode(n));
+                r.appendChild(t);
+              } else {
+                t = d.getElementsByTagName("head")[0];
+                var n = d.createElement("div");
+                n.style.cssText = "z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;";
+                n.setAttribute("id", "_vis_opt_path_hides");
+                n.classList.add("_vis_hide_layer");
+                t.parentNode.insertBefore(n, t.nextSibling);
+              }
+              var o = "https://dev.visualwebsiteoptimizer.com/j.php?a=" + account_id + "&u=" + encodeURIComponent(d.URL) + "&vn=" + version;
+              if (w.location.search.indexOf("_vwo_xhr") !== -1) {
+                this.addScript({ src: o });
+              } else {
+                this.load(o + "&x=true");
+              }
+            },
+          };
+          w._vwo_code = code;
+          code.init();
+        })();
+    </script>
+    <!-- End VWO Async SmartCode -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Golden Tiger Academy - Karate",
+        "url": "https://goldentigeracademy.com/karate.html",
+        "image": "https://goldentigeracademy.com/apple-touch-icon.png",
+        "telephone": "+353 87 123 4567",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Unit 10, Dunboyne Business Park",
+          "addressLocality": "Dunboyne",
+          "addressRegion": "Co. Meath",
+          "postalCode": "A86 WR26",
+          "addressCountry": "IE"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Lucy"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            },
+            "reviewBody": "Great, supportive atmosphere and friendly people. I've learned so much and gained confidence from these Karate classes. Definitely one of the best sports I've done—highly recommend!"
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Liam"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            },
+            "reviewBody": "Great club with great Karate coaches. A very friendly and encouraging environment to learn and grow."
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Robert"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            },
+            "reviewBody": "Very nice place with friendly staff. If you looking for any Karate classes for your child including kids with a disability, this is for you."
+          }
+        ]
+      }
+    </script>
+
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/f9aefcac71.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://goldentigeracademy.com/karate.html" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffa126" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Train 1-to-1 with Kalum Byrne in Brazilian Jiu-Jitsu, Kickboxing & Muay Thai. Private martial arts training in Dunboyne for all levels." />
+    <title>Private Martial Arts Training in Dunboyne | Kalum Byrne</title>
+  </head>
+  <body id="class-karate-body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6FXLSWW" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <div class="header-content-container-inner">
+        <span class="logo"><a href="./">Golden Tiger Academy</a></span>
+        <nav>
+          <button class="mobile-menu-button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle Menu">
+            <svg fill="var(--theme-color-3)" class="hamburger" viewBox="0 0 100 100" width="25">
+              <rect class="line top" y="25" rx="5" x="0" width="100" height="10"></rect>
+              <rect class="line middle" y="45" rx="5" x="0" width="100" height="10"></rect>
+              <rect class="line bottom" y="65" rx="5" x="0" width="100" height="10"></rect>
+            </svg>
+          </button>
+
+          <div class="mobile-nav-wrapper">
+            <ul id="primary-navigation">
+              <li><a href="/#about-us" class="nav-link">About us</a></li>
+              <li><a href="/#our-classes" class="nav-link">Our Classes</a></li>
+              <li><a href="/#faqs" class="nav-link">FAQs</a></li>
+              <li><a href="/#timetable" class="nav-link">Timetable</a></li>
+              <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+              <li><a href="/#shop" class="nav-link">Shop</a></li>
+              <li><a href="/contact-us" class="nav-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero - Intro Section  -->
+    <section class="class-intro-container-outer">
+      <div class="class-intro-container-inner">
+        <h1 class="class-title">Private Martial Arts Training</h1>
+        <p>Looking for focused, one-to-one martial arts coaching tailored specifically to you? Train privately with Kalum Byrne at Golden Tiger Academy in Dunboyne. These personalised sessions are ideal for adults who want faster progress, individual attention, and training built around their goals, whether that’s fitness, self-defence, skill development, or confidence. Kalum has trained in martial arts since the age of 4 and brings a deep understanding of movement, technique, and conditioning to every session. Private lessons are suitable for complete beginners through to experienced martial artists.</p>
+      </div>
+      <div class="shape-divider-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="theme-color-1"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Section - Our Karate Class Format -->
+    <section class="our-class-format-container-outer">
+      <div class="our-class-format-container-inner">
+        <img src="./images/page-personal-training-01.png" alt="Kalum Byrne Training Muay Thai" />
+
+        <div class="class-text">
+          <div class="class-format">
+            <h2>About Your Trainer</h2>
+            <p>Kalum Byrne is an experienced martial artist and qualified Personal Trainer with a lifelong background in combat sports. He holds a black belt in Kickboxing, a purple belt in Brazilian Jiu-Jitsu, and has several years of Muay Thai training. Alongside his martial arts credentials, Kalum is a certified Personal Trainer, allowing him to safely combine technical skill development with strength, conditioning, and mobility. His coaching style is calm, supportive, and focused on strong fundamentals, helping students train smarter and progress with confidence.</p>
+          </div>
+          <div class="class-format">
+            <!-- <aside class="arrow">Limited spaces available!</aside> -->
+            <h2>Why Train 1-to-1?</h2>
+            <p>Private martial arts training allows you to progress at your own pace with complete focus on your individual goals. Each session is fully personalised, giving you direct feedback, technical correction, and structured training without distractions. One-to-one training is ideal if you want extra coaching alongside group classes, are returning after time away, prefer private sessions, or want faster improvement in a specific area.</p>
+          </div>
+          <div class="class-format">
+            <h2>What’s Included</h2>
+            <ul>
+              <li>- Brazilian Jiu-Jitsu (gi or no-gi fundamentals and techniques)</li>
+              <li>- Kickboxing and Muay Thai striking fundamentals</li>
+              <li>- Technical breakdowns and personalised feedback</li>
+              <li>- Safe techniques with injury prevention focus</li>
+              <li>- Strong focus on safety and injury prevention</li>
+              <li>- Supportive, no-pressure learning environment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="shape-divider-bottom">
+        <svg data-name="Layer 4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="theme-color-4"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Section - The Benefits -->
+    <!-- <section class="class-section-container-outer">
+      <div class="class-section-container-inner">
+        <div class="benefits-image karate"></div>
+
+        <div class="benefits-text-container">
+          <h2>The Benefits of Karate</h2>
+          <div class="benefits">
+            <img src="./images/icon-self-defense.webp" class="class-icon" alt="self-defense icon" />
+            <h3>Self-Defense</h3>
+            <p>Develop practical self-defense skills and techniques that can be applied in real-life situations, empowering you to protect yourself and others effectively.</p>
+          </div>
+          <div class="benefits">
+            <img src="./images/icon-fitness.webp" class="class-icon" alt="fitness icon" />
+            <h3>Improved Fitness</h3>
+            <p>mprove your overall fitness level by enhancing cardiovascular health, strength, flexibility, and agility through rigorous Karate training routines and techniques.</p>
+          </div>
+          <div class="benefits">
+            <img src="./images/icon-mental-health.webp" class="class-icon" alt="mental health icon" />
+            <h3>Mental Wellness</h3>
+            <p>Cultivate mental discipline, concentration, and focus as you navigate the intricate movements and principles of Karate, leading to improved mental clarity and mindfulness.</p>
+          </div>
+          <div class="benefits">
+            <img src="./images/icon-community.webp" class="class-icon" alt="community icon" />
+            <h3>Supportive Community</h3>
+            <p>Join a supportive community where you'll forge friendships, share experiences, and encourage each other to reach new heights in your Karate journey.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Section - Your First Class -->
+    <section class="first-class-container-outer">
+      <h4 class="first-class">For Your First Class</h4>
+
+      <div class="first-class-container-inner">
+        <div class="tip hidden">
+          <div class="tip-image">
+            <img src="./images/icon-tshirt.webp" class="icon" alt="t-shirt icon" />
+          </div>
+
+          <h4>Dress Comforably</h4>
+          <p>Wear regular comfortable gym clothes</p>
+        </div>
+        <div class="tip hidden">
+          <div class="tip-image">
+            <img src="./images/icon-water-bottle.webp" class="icon" alt="water bottle icon" />
+          </div>
+          <h4>Stay Hydrated</h4>
+          <p>Bring along a water bottle to keep yourself hydrated during training.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section class="testimonials-section-container-outer">
+      <h2>Testimonials</h2>
+      <div class="testimonials-section-container-inner">
+        <div class="testimonial-card hidden">
+          <h3>Lucy</h3>
+          <img src="./images/icon-5-stars.webp" class="icon-stars" alt="5 stars" />
+          <p class="testimonial-review">Great, supportive atmosphere and friendly people. I've learned so much and gained confidence from these Karate classes. Definitely one of the best sports I've done—highly recommend!</p>
+          <img src="./images/icon-google-reviews.webp" alt="google reviews logo" class="icon-google" />
+        </div>
+        <div class="testimonial-card hidden">
+          <h3>Liam</h3>
+          <img src="./images/icon-5-stars.webp" class="icon-stars" alt="5 stars" />
+          <p class="testimonial-review">Great club with great Karate coaches. A very friendly and encouraging environment to learn and grow.</p>
+          <img src="./images/icon-google-reviews.webp" alt="google reviews logo" class="icon-google" />
+        </div>
+        <div class="testimonial-card hidden">
+          <h3>Robert</h3>
+          <img src="./images/icon-5-stars.webp" class="icon-stars" alt="5 stars" />
+          <p class="testimonial-review">Very nice place with friendly staff. If you looking for any Karate classes for your child including kids with a disabilty, this is for you.</p>
+          <img src="./images/icon-google-reviews.webp" alt="google reviews logo" class="icon-google" />
+        </div>
+      </div>
+      <div class="shape-divider-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="theme-color-1"></path>
+        </svg>
+      </div>
+    </section> -->
+
+    <!-- FAQ Section -->
+    <section class="faq-section-container-outer" id="faqs">
+      <h2>FAQ's</h2>
+      <div class="faq-section-container-inner">
+        <ul class="accordion">
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer1">
+              <span class="question-title">Who are private lessons suitable for?</span>
+              <img src="./images/icon-plus.svg" alt="plus icon" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="minus icon" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer1" aria-hidden="true"><span>Private lessons are suitable for complete beginners, experienced martial artists, and anyone looking for personalised coaching, faster progression, or additional confidence.</span></p>
+          </li>
+
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer2">
+              <span class="question-title">What martial arts can I train?</span>
+              <img src="./images/icon-plus.svg" alt="plus icon" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="minus icon" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer2" aria-hidden="true"><span>Private training is available in Brazilian Jiu-Jitsu, Kickboxing, and Muay Thai. Sessions can focus on one discipline or a combination depending on your goals.</span></p>
+          </li>
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer3">
+              <span class="question-title">Do I need previous martial arts experience?</span>
+              <img src="./images/icon-plus.svg" alt="plus icon" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="minus icon" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer3" aria-hidden="true"><span>No experience is required. Sessions are fully adapted to your level, from first-time beginners to advanced students.</span></p>
+          </li>
+
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer4">
+              <span class="question-title">How long are private sessions?</span>
+              <img src="./images/icon-plus.svg" alt="plus icon" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="minus icon" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer4" aria-hidden="true"><span>Sessions typically last 60 minutes. This can be discussed when booking to suit your schedule and goals. </span></p>
+          </li>
+
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer5">
+              <span class="question-title">Is private training safe?</span>
+              <img src="./images/icon-plus.svg" alt="plus icon" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="minus icon" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer5" aria-hidden="true"><span>Yes. Kalum is a qualified Personal Trainer and experienced martial artist, with a strong emphasis on correct technique, controlled training, and injury prevention.</span></p>
+          </li>
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer6">
+              <span class="question-title">How long are the sessions?</span>
+              <img src="./images/icon-plus.svg" alt="plus icon" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="minus icon" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer6" aria-hidden="true"><span>Session length can vary depending on your goals and schedule. Typically, sessions range from 30–60 minutes. Contact us to discuss your preferred timing.</span></p>
+          </li>
+          <li class="faq">
+            <button class="question-wrapper" aria-expanded="false" aria-controls="answer6">
+              <span class="question-title">How do I book a private lesson?</span>
+              <img src="./images/icon-plus.svg" alt="plus icon" class="icon-plus" />
+              <img src="./images/icon-minus.svg" alt="minus icon" class="hide icon-minus" />
+            </button>
+            <p class="faq-answer" id="answer6" aria-hidden="true"><span>You can contact Golden Tiger Academy via our website or phone to enquire about availability and book your session. Spaces are limited.</span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section - Ready To Join -->
+    <section class="ready-to-join-container-outer">
+      <div class="ready-to-join-container-inner">
+        <h3>Ready to Begin?</h3>
+        <p>Make the most of your time while your kids train! Join Kalum Byrne for a personalised personal training session upstairs. Tailored to your fitness level and goals, these sessions are safe, effective, and convenient for busy parents.</p>
+        <div class="cta-container">
+          <div class="cta-wrap draw-border">
+            <a href="./contact-us" class="cta cta-1-contact-us"> <i class="fa fa-envelope"></i> Book your session</a>
+          </div>
+          <div class="cta-wrap draw-border draw-border">
+            <a href="tel:0872333481" class="cta cta-2-call-us"> <i class="fa fa-solid fa-phone fa-flip-horizontal"></i> Call Us Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner-container">
+        <div class="address">
+          <span class="logo"><a href="./">Golden Tiger Academy</a></span>
+          <div class="address-text">
+            Address: Unit 10, Dunboyne Business Park, <br />
+            Dunboyne, Co. Meath, A86 WR26
+          </div>
+          <a class="address-text" href="./sitemap.html">sitemap</a>
+        </div>
+
+        <div class="social-media-container">
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com/goldentigeracademy/" target="_blank">
+              <i class="fa fa-facebook-f"></i>
+              <span class="sr-only">Facebook</span>
+            </a>
+            <a href="https://www.instagram.com/kengoldentiger/" target="_blank">
+              <i class="fa fa-instagram"></i>
+              <span class="sr-only">Instagram</span>
+            </a>
+
+            <a href="./contact-us">
+              <i class="fa fa-envelope"></i>
+              <span class="sr-only">Email Us Now</span>
+            </a>
+            <a href="tel:0872333481">
+              <i class="fa fa-solid fa-phone fa-flip-horizontal"></i>
+              <span class="sr-only">Call Us Now</span>
+            </a>
+          </div>
+
+          <a href="/blog/" class="read-blog">check out our blog</a>
+          <a href="https://www.linkedin.com/in/shanemcgeown/" class="designed-by">Designed by: shanemcgeown</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./mobile-nav.js"></script>
+    <script src="./animate.js"></script>
+    <script src="./faq.js"></script>
+  </body>
+</html>
